@@ -1,17 +1,18 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import starImage from "./assets/images/star.png";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <div class="container">
       <header class="header">
         <nav>
-          <div class="logo"><a href="./home.html"><h3>TalentHub</h3></a></div>
+          <div class="logo"><Link href="/"><h3>TalentHub</h3></Link></div>
           <ul>
-            <li><a href="./home.html">Home</a></li>
-            <li><a href="./about.html">About Us</a></li>
-            <li><a href="./shopping-cart.html">Cart</a></li>
+            <li><Link href="/">Home</Link></li>
+            <li><Link href="about-us">About Us</Link></li>
+            <li><Link href="shopping-cart">Cart</Link></li>
           </ul>
           <button class="btn-login" onclick="window.open('./login.html', '_self');">Login</button>
         </nav>
@@ -35,11 +36,13 @@ export default function Home() {
               onchange="window.location.href=this.value;"
             >
               <option disabled selected>Please select an artist</option>
-              <option value="./list-of-artists.html">Portrait Painter</option>
-              <option value="./list-of-painters.html">Painters</option>
-              <option value="./list-of-photographers.html">Photographer</option>
-              <option value="./list-of-artists.html">DJ's</option>
-              <option value="./list-of-artists.html">Web Developer</option>
+              <option value={<Link href="about-us"></Link>}>Portrait Painter</option>
+              <option value=""><Link href="about-us">Portrait Painter</Link></option>
+              <option value="artists">Portrait Painter</option>
+              <option value="/">Painters</option>
+              <option value="/">Photographer</option>
+              <option value="/">DJ's</option>
+              <option value="/">Web Developer</option>
             </select>
           </div>
           <div class={styles.reviews}>

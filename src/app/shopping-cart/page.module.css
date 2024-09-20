@@ -1,0 +1,103 @@
+
+.content{
+    margin-top: 0%;
+    margin-left: 15%;
+    color: #fff;
+    max-width: 800px;
+    font-size: 20px;
+}
+
+.content h1{
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 55px;
+    margin-top: 40px;
+    color: #fff;
+}
+
+.content p{
+    font-size: 15px;
+}
+
+.title h1,
+.title h2{
+    color: #FFFF;
+    margin-top: 30px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+
+.title h1{
+    text-align: left;
+    text-align: center;
+}
+
+.provided_services,
+.selected_services {
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 2px solid #fff;
+    margin-bottom: 20px;
+    color: #fff;
+} 
+
+.provided_services th,
+.selected_services th{
+    width: 300px;
+} 
+
+.selected_services tr{
+    height: 50px;
+    font-size: 13px;
+}
+
+.quantity{
+    text-align: center;
+}
+
+#input {
+    width: 60px;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: right;
+    background:white;
+    border: .5px solid black;
+    border-radius: 5px;
+}
+
+.price {
+    text-align: center;
+}
+
+.btn_pay_for_order{
+    width: 130px;
+    padding: 14px 0px;
+    background: transparent;
+    color: #fff;
+    font-size: 20px;
+    border: 1px solid #d29de8d3;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn_pay_for_order{
+    display: block;
+    width: 175px;
+    margin: auto;
+    font-size: 18px;
+    padding: 8px 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn_pay_for_order:hover{
+    transform: translateY(-7px);
+    background:#d29de8d3;
+    color: #121414;
+}

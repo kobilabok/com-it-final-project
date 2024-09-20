@@ -1,0 +1,217 @@
+
+.content{
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+    font-size: 20px;
+    margin-top: 1%;
+}
+
+.content h1{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 55px;
+    margin-top: 40px;
+    color: #fff;
+}
+
+.content p{
+    font-size: 15px;
+}
+
+.title h1,
+.title h2{
+    color: #FFFF;
+    margin-top: 20px;
+    font-size: 19px;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+.title h1{
+    text-align: left;
+    text-align: center;
+}
+
+.artist_description_tiles{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 22px;
+    color: #fff;
+    margin: 0px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    padding: 10px 7px 4px 7px;
+    width: 800px;
+    height: 280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.artist_description{
+    margin-left: 10px;
+    text-align: justify;
+}
+
+.artist_description_tiles img{
+    height: 270px;
+    width: 270px;
+    border-radius: 5px;
+}
+
+.artist_description_tiles p{
+    text-align: left;
+    font-size: 15px;
+    line-height: 1;
+    letter-spacing: 1.2px;
+    margin-top: 10px;
+    width: 500px;
+}
+
+.artist_description_tiles .provided-services{
+    font-size: 20px;
+    width: 900px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.artist_description_tiles button{
+    align-items: right;
+}
+
+.artist_description_tiles .artist-description h3{
+    margin: 20px 0px;
+}
+
+.stars img{
+    width: 22px;
+    height: 22px;
+    margin: 10px 5px 0px 0px;
+}
+
+.service_tiles:hover,
+.artist_tiles:hover{
+    transform: translateY(10px);
+    background-color: rgba(113, 97, 128, 0.65);
+}
+
+.tile_clickable{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: none;
+}
+
+.tile_clickable a{
+    text-decoration: none;
+}
+
+.tile_clickable p{
+    color: #fff;
+}
+
+.tile_clickable img{
+    margin-bottom: 10px;
+}
+
+.service_tiles{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 8px;
+    border-radius: 10px;
+    background-color: #775a967c;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    margin-top: 10px;
+    padding: 5% 15% 5px;
+    width: 186px;
+    height: 290px;
+    color:#fff;
+    line-height: 1;
+    text-align: center;
+}
+
+.service_tiles h2{
+    color: #fff;
+    font-size: 25px;
+    padding: 50px 0;
+    text-align: center;
+
+}
+
+.service_tiles p{
+    font-size: 20px;
+    width: 100px;
+    margin: 10px 0px 0px 0px;
+    text-transform: uppercase;
+}
+
+.service_tiles h3{
+    width: 100px;
+    font-size: 20px;
+    padding-bottom: 0px;
+}
+
+.service_tiles ul{
+    font-size: 12px;
+    text-align: left;
+    line-height: 1.4;
+}
+
+.service_tiles button{
+    margin-left: 0px;
+}
+
+.service_tiles button{
+    width: 90px;
+    padding: 10px 0px;
+    background: transparent;
+    color: #fff;
+    font-size: 12px;
+    border: 1px solid #d29de8d3;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.service_tiles button:hover{
+    transform: translateY(-5px);
+    background:#d29de8d3;
+    color: #121414;
+}
+
+.btn_timeslot_weekday,
+.btn_timeslot_time{
+    padding: 10px 10px;
+    margin: 8px;
+    border-radius: 50px;
+    background: #775a967c;
+    border: #775a967c;;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    font-size: 18px;
+    cursor: not-allowed;
+    transition: 0.3s;
+}
+
+.btn_timeslot_weekday{
+    width: 60px;
+    height: 80px;
+}
+
+.btn-timeslot-time{
+    width: 130px;
+    height: 80px;
+}
+
+.btn_timeslot_weekday,
+.btn_timeslot_time{
+    transform: translateY(-7px);
+    background:#d29de8d3;
+    color: #121414;
+}
