@@ -1,5 +1,4 @@
 import styles from "./page.module.css";
-import Link from "next/link";
 import Image from "next/image";
 import imageOne from "../assets/images/photographer-one.png";
 import imageTwo from "../assets/images/photographer-two.png";
@@ -9,18 +8,6 @@ import imageFive from "../assets/images/photographer-five.png";
 
 export default function Photographers() {
   return (
-    <div class="container">
-      <header class="header">
-        <nav>
-          <div class="logo"><Link href="/"><h3>TalentHub</h3></Link></div>
-          <ul>
-            <li><Link href="/">Home</Link></li>
-            <li><Link href="about-us">About Us</Link></li>
-            <li><Link href="shopping-cart">Cart</Link></li>
-          </ul>
-          <button class="btn-login" onclick="window.open('./login.html', '_self');">Login</button>
-        </nav>
-      </header>
       <div class={styles.content}>
         <main>
           <div class={styles.title}>
@@ -110,34 +97,5 @@ export default function Photographers() {
           </div>
         </main>
       </div>
-      <footer>
-        <div class="footer">
-          <h2>Questions or Concerns? Call 1800-678-2233</h2>
-  
-          <div class="row">
-            <div class="col">
-              <a href="#">© 2024</a>
-              <a href="#">Talenthub.com Global Limited.</a>
-              <a href="#">Terms & Conditions</a>
-            </div>
-            <div class="col">
-              <a href="mailto: info@talentHub.com">info@talentHub.com</a>
-              <a href="#">Corporate Information</a>
-              <a href="#">Investor Relations</a>
-            </div>
-            <div class="col">
-              <a href="#">Help Center</a>
-              <a href="#">Legal Notice</a>
-              <a href="#">Privacy</a>
-            </div>
-            <div class="col">
-              <a href="#">FAQ</a>
-              <a href="#">Account</a>
-              <a href="#">Careers</a>
-            </div>
-          </div>
-        </div>
-      </footer>
-    </div>
   );
 }

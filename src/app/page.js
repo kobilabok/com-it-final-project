@@ -1,23 +1,10 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import starImage from "./assets/images/star.png";
-import Link from "next/link";
 
 export default function Home() {
   return (
-    <div class="container">
-      <header class="header">
-        <nav>
-          <div class="logo"><Link href="/"><h3>TalentHub</h3></Link></div>
-          <ul>
-            <li><Link href="/">Home</Link></li>
-            <li><Link href="about-us">About Us</Link></li>
-            <li><Link href="shopping-cart">Cart</Link></li>
-          </ul>
-          <button class="btn-login" onclick="window.open('./login.html', '_self');">Login</button>
-        </nav>
-      </header>
-      <div class={styles.content}>
+      <div className={styles.content}>
         <main>
           <h1>Welcome to TalentHub</h1>
           <p>
@@ -28,28 +15,26 @@ export default function Home() {
             providers? Request up to four comparison offers quickly, easily and
             free of charge.
           </p>
-          <div class="dropdown">
+          <div className="dropdown">
             <select
-              class={styles.select}
+              className={styles.select}
               name="artists"
               id="artists"
               onchange="window.location.href=this.value;"
             >
               <option disabled selected>Please select an artist</option>
-              <option value={<Link href="about-us"></Link>}>Portrait Painter</option>
-              <option value=""><Link href="about-us">Portrait Painter</Link></option>
-              <option value="artists">Portrait Painter</option>
-              <option value="/">Painters</option>
-              <option value="/">Photographer</option>
+              <option value="about-us">Portrait Painter</option>
+              <option value="painters">Painters</option>
+              <option value="photographer">Photographer</option>
               <option value="/">DJ's</option>
               <option value="/">Web Developer</option>
             </select>
           </div>
-          <div class={styles.reviews}>
+          <div className={styles.reviews}>
             <h3>Reviews</h3>
           </div>
-          <div class={styles.tiles}> 
-            <div class={styles.tile}>
+          <div className={styles.tiles}> 
+            <div className={styles.tile}>
               <p>
                 <Image src={starImage} alt="reviews star" />
                 <Image src={starImage} alt="reviews star" />
@@ -60,7 +45,7 @@ export default function Home() {
                 <br /><br /><b>02 Jun 2024</b>
               </p>
             </div>
-            <div class={styles.tile}>
+            <div className={styles.tile}>
               <p>
                 <Image src={starImage} alt="reviews star" />
                 <Image src={starImage} alt="reviews star" />
@@ -71,7 +56,7 @@ export default function Home() {
                 <br /><br /><b>28 May 2024</b>
                 </p>
             </div>  
-            <div class={styles.tile}>
+            <div className={styles.tile}>
               <p>
                 <Image src={starImage} alt="reviews star" />
                 <Image src={starImage} alt="reviews star" />
@@ -84,35 +69,6 @@ export default function Home() {
             </div>
           </div>  
         </main>
-      </div>
-      <footer>
-        <div class="footer">
-          <h2>Questions or Concerns? Call 1800-678-2233</h2>
-  
-          <div class="row">
-            <div class="col">
-              <a href="#">© 2024</a>
-              <a href="#">Talenthub.com Global Limited.</a>
-              <a href="#">Terms & Conditions</a>
-            </div>
-            <div class="col">
-              <a href="mailto: info@talentHub.com">info@talentHub.com</a>
-              <a href="#">Corporate Information</a>
-              <a href="#">Investor Relations</a>
-            </div>
-            <div class="col">
-              <a href="#">Help Center</a>
-              <a href="#">Legal Notice</a>
-              <a href="#">Privacy</a>
-            </div>
-            <div class="col">
-              <a href="#">FAQ</a>
-              <a href="#">Account</a>
-              <a href="#">Careers</a>
-            </div>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }

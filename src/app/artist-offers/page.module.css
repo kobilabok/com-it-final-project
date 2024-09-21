@@ -101,7 +101,7 @@
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 25px;
+    margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
     background-color: none;
@@ -187,30 +187,60 @@
 
 .btn_timeslot_weekday,
 .btn_timeslot_time{
-    padding: 10px 10px;
+    /* padding: 10px 10px; */
     margin: 8px;
     border-radius: 50px;
     background: #775a967c;
     border: #775a967c;;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     color: #fff;
-    font-size: 18px;
-    cursor: not-allowed;
+    font-size: 14px;
+    cursor: pointer;
     transition: 0.3s;
 }
 
 .btn_timeslot_weekday{
     width: 60px;
-    height: 80px;
+    height: 70px;
 }
 
-.btn-timeslot-time{
-    width: 130px;
-    height: 80px;
-}
-
-.btn_timeslot_weekday,
 .btn_timeslot_time{
+    width: 100px;
+    height: 40px;
+}
+
+.btn_timeslot_weekday:hover,
+.btn_timeslot_time:hover{
+    transform: translateY(-5px);
+    background:#d29de8d3;
+    color: #121414;
+}
+
+.btn_go_to_shopping_cart{
+    width: 100px;
+    padding: 14px 0px;
+    background: transparent;
+    color: #fff;
+    font-size: 20px;
+    border: 1px solid #d29de8d3;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn_go_to_shopping_cart{
+    display: block;
+    width: 230px;
+    margin: auto;
+    font-size: 15px;
+    padding: 16px 32px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn_go_to_shopping_cart:hover{
     transform: translateY(-7px);
     background:#d29de8d3;
     color: #121414;
