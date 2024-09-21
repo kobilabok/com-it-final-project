@@ -8,15 +8,15 @@ import imageFive from "../assets/images/photographer-five.png";
 
 export default function Photographers() {
   return (
-      <div class={styles.content}>
+      <div className={styles.content}>
         <main>
-          <div class={styles.title}>
+          <div className={styles.title}>
             <h1>The most popular Photographers in your area</h1>
           </div>
-          <div class={styles.tile_clickable}>
+          <div className={styles.tile_clickable}>
             <div>
               <a href="./artist-offers.html">
-                <div class={ styles.artist_tiles }>
+                <div className={ styles.artist_tiles }>
                   <div>
                     <Image
                     src={imageOne} alt="photographer-one"
@@ -32,7 +32,7 @@ export default function Photographers() {
               </div>
               <div>
                 <a href="./artist-offers.html">
-                  <div class={ styles.artist_tiles }>
+                  <div className={ styles.artist_tiles }>
                     <div>
                       <Image
                       src={imageTwo} alt="photographer-two"
@@ -48,7 +48,7 @@ export default function Photographers() {
               </div>
               <div>
                 <a href="./artist-offers.html">
-                  <div class={ styles.artist_tiles }>
+                  <div className={ styles.artist_tiles }>
                     <div>
                       <Image
                       src={imageThree} alt="photographer-three"
@@ -64,7 +64,7 @@ export default function Photographers() {
               </div>
               <div>
                 <a href="./artist-offers.html">
-                  <div class={ styles.artist_tiles }>
+                  <div className={ styles.artist_tiles }>
                     <div>
                       <Image
                       src={ imageFour } alt="photographer-four"
@@ -80,7 +80,7 @@ export default function Photographers() {
               </div>
               <div>
                 <a href="./artist-offers.html">
-                  <div class={ styles.artist_tiles }>
+                  <div className={ styles.artist_tiles }>
                     <div>
                       <Image
                       src={ imageFive } alt="photographer-five"

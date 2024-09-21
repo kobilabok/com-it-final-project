@@ -1,5 +1,4 @@
 import styles from "./page.module.css";
-import Link from "next/link";
 import Image from "next/image";
 import starImage from "../assets/images/star.png";
 import profilePhoto from "../assets/images/photographer-four.png";
@@ -7,12 +6,12 @@ import profilePhoto from "../assets/images/photographer-four.png";
 
 export default function ArtistOffers() {
   return (
-      <div className={ styles.content }>
+      <div className={styles.content}>
         <main>
-          <div className={ styles.title }>
+          <div className={styles.title}>
             <h1>Provided Services by the selected artist</h1>
           </div>
-          <div className={ styles.artist_description_tiles }>
+          <div className={styles.artist_description_tiles}>
             <div>
               <Image
                 src= {profilePhoto} alt="mark photographer"

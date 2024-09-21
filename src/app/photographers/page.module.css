@@ -1,35 +1,4 @@
 
-.content{
-    margin-left: auto;
-    margin-right: auto;
-    color: #fff;
-    max-width: 800px;
-    font-size: 20px;
-    margin-top: 1%;
-}
-
-.content h1{
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 55px;
-    margin-top: 40px;
-    color: #fff;
-}
-
-.content p{
-    font-size: 15px;
-}
-
-.title h1,
-.title h2{
-    color: #FFFF;
-    margin-top: 10px;
-    text-align: center;
-    letter-spacing: 0.5px;
-}
-
-
-
 .tile_clickable{
     display: flex;
     flex-direction: row;
@@ -63,8 +32,8 @@
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     margin-top: 15px;
     padding: 2px 2px 2px 2px;
-    width: 170px;
-    height: 275px;
+    width: 200px;
+    height: 305px;
     text-align: center;
     color:#fff;
     line-height: 1;
@@ -73,16 +42,16 @@
 }
 
 .artist_tiles p{
-    line-height: 13px;
-    font-size: 12px;
+    font-size: 13px;
+    line-height: 1.2;
     margin-bottom: 40px;
 }
 
 .artist_tiles img{
-    width: 165px;
-    height: 155px;
+    width: 190px;
+    height: 185px;
     border-radius: 5px;
-    margin-top: 0px;
+    margin-top: 2px;
     margin-bottom: 5px;
 }
 

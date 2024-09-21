@@ -1,31 +1,15 @@
-
 .content{
     margin-top: 10%;
-    margin-left: 15%;
+    margin-left: 12%;
     color: #fff;
     max-width: 800px;
-    font-size: 20px;
+    font-size: 10px;
 }
-
-.content h1{
-    font-size: 30px;
-    font-weight: 600;
-    line-height: 55px;
-    margin-top: 40px;
-    color: #fff;
-}
-
-.content p{
-    font-size: 15px;
-}
-
-.title h1,
-.title h2{
-    color: #FFFF;
-    margin-top: 50px;
-    text-align: center;
-    letter-spacing: 1px;
-}
+  
+.title{
+    text-align: left;
+    font-size: 24px;
+  }
 
 .reviews_tile{
     display: flex;
@@ -37,12 +21,12 @@
 .reviews_tile,
 .tile{
     margin-left: 0%;
+    margin-top: 20px;
 }
 
 .reviews_title{
     color: #fff;
     font-size: 30px;
-    margin-top: 5%;
 }
  
 .tile{
@@ -56,25 +40,21 @@
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     margin-top: 10px;
     padding: 10px 7px 4px 7px;
-    height: 250px;
-    width: 150px;
+    height: 230px;
+    width: 200px;
     transition: 0.5s;
 }
 
 .tile h2{
     font-size: 15px;
+    margin-top: 0px;
+    text-align: left;
 }
 
 
 .tile p{
     margin-top: 10px;
     font-size: 12px;
-}
-
-.tile p img{
-    width: 28px;
-    height: 28px;
-    margin-bottom: 10px;
 }
 
 .tile:hover{

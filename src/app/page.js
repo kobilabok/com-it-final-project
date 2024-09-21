@@ -6,7 +6,7 @@ export default function Home() {
   return (
       <div className={styles.content}>
         <main>
-          <h1>Welcome to TalentHub</h1>
+          <h1 className={styles.title}>Welcome to TalentHub</h1>
           <p>
             Check out our talented artist to bring the perfect touch of intimacy
             to your event. From accordions to ukuleles, from bagpipes to violins,
@@ -15,12 +15,12 @@ export default function Home() {
             providers? Request up to four comparison offers quickly, easily and
             free of charge.
           </p>
-          <div className="dropdown">
+          <div>
             <select
               className={styles.select}
               name="artists"
               id="artists"
-              onchange="window.location.href=this.value;"
+              onchange="navigateToPage(this.value)"
             >
               <option disabled selected>Please select an artist</option>
               <option value="about-us">Portrait Painter</option>

@@ -1,39 +1,4 @@
 
-.content{
-    margin-top: 0%;
-    margin-left: 15%;
-    color: #fff;
-    max-width: 800px;
-    font-size: 20px;
-}
-
-.content h1{
-    font-size: 30px;
-    font-weight: 600;
-    line-height: 55px;
-    margin-top: 40px;
-    color: #fff;
-}
-
-.content p{
-    font-size: 15px;
-}
-
-.title h1,
-.title h2{
-    color: #FFFF;
-    margin-top: 30px;
-    text-align: center;
-    letter-spacing: 1px;
-    font-size: 20px;
-}
-
-
-.title h1{
-    text-align: left;
-    text-align: center;
-}
-
 .provided_services,
 .selected_services {
     margin-left: auto;

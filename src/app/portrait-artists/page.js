@@ -10,15 +10,15 @@ import painterSeven from "../assets/images/portrait-painter-seven.png";
 
 export default function PortraitArtists() {
   return (
-      <div class={styles.content}>
+      <div className={styles.content}>
         <main>
-          <div class={styles.title}>
+          <div className={styles.title}>
             <h1>The most popular Portrait Painters in your area</h1>
           </div>
-          <div class={styles.tile_clickable}>
+          <div className={styles.tile_clickable}>
             <div>
               <a href="./artist-offers.html">
-                <div class={ styles.artist_tiles }>
+                <div className={ styles.artist_tiles }>
                   <div>
                     <Image
                     src={painterOne} alt="portrait-painter-one"
@@ -34,10 +34,10 @@ export default function PortraitArtists() {
               </div>
               <div>
                 <a href="./artist-offers.html">
-                  <div class={ styles.artist_tiles }>
+                  <div className={styles.artist_tiles}>
                     <div>
                       <Image
-                      src={ painterThree } alt="portrait-painter-three"
+                      src={painterThree} alt="portrait-painter-three"
                       />
                     </div>
                     <p>
@@ -50,10 +50,10 @@ export default function PortraitArtists() {
               </div>
               <div>
                 <a href="./artist-offers.html">
-                  <div class={ styles.artist_tiles }>
+                  <div className={styles.artist_tiles}>
                     <div>
                       <Image
-                      src={ painterTwo } alt="portrait-painter-two"
+                      src={painterTwo} alt="portrait-painter-two"
                       />
                     </div>
                     <p>
@@ -66,10 +66,10 @@ export default function PortraitArtists() {
               </div>
               <div>
                 <a href="./artist-offers.html">
-                  <div class={ styles.artist_tiles }>
+                  <div className={styles.artist_tiles}>
                     <div>
                       <Image
-                      src={ painterFour } alt="portrait-painter-four"
+                      src={painterFour} alt="portrait-painter-four"
                       />
                     </div>
                     <p>
@@ -82,10 +82,10 @@ export default function PortraitArtists() {
               </div>
               <div>
                 <a href="./artist-offers.html">
-                  <div class={ styles.artist_tiles }>
+                  <div className={styles.artist_tiles}>
                     <div>
                       <Image
-                      src={ painterFive } alt="portrait-painter-five"
+                      src={painterFive} alt="portrait-painter-five"
                       />
                     </div>
                     <p>
@@ -98,10 +98,10 @@ export default function PortraitArtists() {
               </div>
               <div>
                 <a href="./artist-offers.html">
-                  <div class={ styles.artist_tiles }>
+                  <div className={styles.artist_tiles}>
                     <div>
                       <Image
-                      src={ painterSix } alt="portrait-painter-six"
+                      src={painterSix} alt="portrait-painter-six"
                       />
                     </div>
                     <p>
@@ -114,10 +114,10 @@ export default function PortraitArtists() {
               </div>
               <div>
                 <a href="./artist-offers.html">
-                  <div class={ styles.artist_tiles }>
+                  <div className={styles.artist_tiles}>
                     <div>
                       <Image
-                      src={ painterSeven } alt="portrait-painter-seven"
+                      src={painterSeven} alt="portrait-painter-seven"
                       />
                     </div>
                     <p>
