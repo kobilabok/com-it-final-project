@@ -63,7 +63,7 @@ export default function Photographers() {
                   </a>
               </div>
               <div>
-                <a href="./artist-offers.html">
+                <a href="artist-offers">
                   <div className={ styles.artist_tiles }>
                     <div>
                       <Image

@@ -8,9 +8,6 @@ export default function ArtistOffers() {
   return (
       <div className={styles.content}>
         <main>
-          <div className={styles.title}>
-            <h1>Provided Services by the selected artist</h1>
-          </div>
           <div className={styles.artist_description_tiles}>
             <div>
               <Image
@@ -38,6 +35,9 @@ export default function ArtistOffers() {
                 handcrafted portraits.<br />
               </p>
             </div>
+          </div>
+          <div className={styles.title}>
+            <h2>Available services for you to select</h2>
           </div>
           <div className={styles.tile_clickable}>
             <div>
@@ -136,7 +136,7 @@ export default function ArtistOffers() {
             <button className={styles.btn_timeslot_time}>6:00 pm</button>
           </div>
           <div>
-            <button className={styles.btn_go_to_shopping_cart} onclick="window.open('./shopping-cart.html', '_self');">Go to Shopping Cart</button>
+            <button className={styles.btn_go_to_shopping_cart} onclick="window.open('shopping-cart', '_self');">Go to Shopping Cart</button>
           </div>
         </main>
       </div>

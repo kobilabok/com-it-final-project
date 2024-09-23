@@ -3,6 +3,12 @@ import styles from "./page.module.css";
 import starImage from "./assets/images/star.png";
 
 export default function Home() {
+
+  function openWindow(select) {
+    var value = select.options[select.selectedIndex].value;
+    window.open(value, 'newwindow')
+  }
+
   return (
       <div className={styles.content}>
         <main>
@@ -15,21 +21,14 @@ export default function Home() {
             providers? Request up to four comparison offers quickly, easily and
             free of charge.
           </p>
-          <div>
-            <select
-              className={styles.select}
-              name="artists"
-              id="artists"
-              onchange="navigateToPage(this.value)"
-            >
-              <option disabled selected>Please select an artist</option>
-              <option value="about-us">Portrait Painter</option>
-              <option value="painters">Painters</option>
-              <option value="photographer">Photographer</option>
-              <option value="/">DJ's</option>
-              <option value="/">Web Developer</option>
-            </select>
-          </div>
+          <div className={styles.dropdown}>
+            <button className={styles.dropbtn}>Please select an artist</button>
+            <div className={styles.dropdown_content}>
+              <a href="portrait-artists">Portrait Painter</a>
+              <a href="painters">Painters</a>
+              <a href="photographers">Photographer</a>
+            </div>
+            </div>
           <div className={styles.reviews}>
             <h3>Reviews</h3>
           </div>

@@ -11,7 +11,7 @@ export default function Header() {
                         <li><Link href="about-us">About Us</Link></li>
                         <li><Link href="shopping-cart">Cart</Link></li>
                     </ul>
-                    <button className={styles.btn_login}>Login</button>
+                    <button className={styles.btn_login}><a href="login">Login</a></button>
                 </nav>
             </header>
     );
