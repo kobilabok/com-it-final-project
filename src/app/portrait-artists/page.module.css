@@ -1,0 +1,61 @@
+
+.tile_clickable{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 800px;
+    margin-top: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: none;
+}
+
+.tile_clickable a{
+    text-decoration: none;
+}
+
+.tile_clickable p{
+    color: #fff;
+}
+
+.tile_clickable img{
+    margin-bottom: 10px;
+}
+
+.artist_tiles{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 6px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    margin-top: 15px;
+    padding: 2px 2px 2px 2px;
+    width: 200px;
+    height: 305px;
+    text-align: center;
+    color:#fff;
+    line-height: 1;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.artist_tiles p{
+    font-size: 13px;
+    line-height: 1.2;
+    margin-bottom: 40px;
+}
+
+.artist_tiles img{
+    width: 190px;
+    height: 185px;
+    border-radius: 5px;
+    margin-top: 2px;
+    margin-bottom: 5px;
+}
+
+.artist_tiles:hover{
+    transform: translateY(10px);
+    background-color: rgba(113, 97, 128, 0.65);
+}

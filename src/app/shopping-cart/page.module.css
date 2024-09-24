@@ -1,0 +1,102 @@
+.selected_services {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    color: #fff;
+} 
+
+.provided_services th,
+.selected_services th{
+    width: 300px;
+    border-bottom: 2px solid #fff;
+
+} 
+
+.selected_services tr{
+    height: 50px;
+    font-size: 13px;
+}
+
+.selected_services td{
+    padding: 17px;
+}
+
+.quantity{
+    text-align: center;
+}
+
+#input {
+    width: 60px;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: right;
+    background:white;
+    border: .5px solid black;
+    border-radius: 5px;
+}
+
+.price {
+    text-align: center;
+}
+
+.btn_pay_for_order{
+    width: 130px;
+    padding: 14px 0px;
+    background: transparent;
+    color: #fff;
+    font-size: 20px;
+    border: 1px solid #d29de8d3;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn_pay_for_order{
+    display: block;
+    width: 175px;
+    margin: auto;
+    font-size: 18px;
+    padding: 8px 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn_pay_for_order a:hover{
+    text-decoration: none;
+}
+
+.btn_pay_for_order:hover{
+    transform: translateY(-7px);
+    background:#d29de8d3;
+    color: #121414;
+}
+
+/* --- Tile --- */
+.shopping_cart_tile{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 22px;
+    color: #fff;
+    margin: 0px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    padding: 10px 7px 4px 7px;
+    width: 800px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #775a967c;
+    margin-top: 20px;
+}
+
+.shopping_cart_tile p{
+    text-align: left;
+    line-height: 1.3;
+    font-size: 15px;
+    margin-top: 10px;
+    width: 500px;
+}

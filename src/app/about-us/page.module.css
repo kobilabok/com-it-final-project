@@ -1,0 +1,63 @@
+.content{
+    margin-top: 10%;
+    margin-left: 12%;
+    color: #fff;
+    max-width: 800px;
+    font-size: 10px;
+}
+  
+.title{
+    text-align: left;
+    font-size: 24px;
+  }
+
+.reviews_tile{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.reviews_title,
+.reviews_tile,
+.tile{
+    margin-left: 0%;
+    margin-top: 20px;
+}
+
+.reviews_title{
+    color: #fff;
+    font-size: 30px;
+}
+ 
+.tile{
+    margin-bottom: 40px;
+    margin: 25px;
+    margin-left: 0;
+    margin-right: 20px;
+    color: #fff;
+    line-height: 1.4;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    margin-top: 10px;
+    padding: 10px 7px 4px 7px;
+    height: 230px;
+    width: 200px;
+    transition: 0.5s;
+}
+
+.tile h2{
+    font-size: 15px;
+    margin-top: 0px;
+    text-align: left;
+}
+
+
+.tile p{
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.tile:hover{
+    transform: translateY(-7px);
+    background-color: rgba(113, 97, 128, 0.65);
+}

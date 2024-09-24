@@ -1,165 +1,105 @@
-.page {
-  --gray-rgb: 0, 0, 0;
-  --gray-alpha-200: rgba(var(--gray-rgb), 0.08);
-  --gray-alpha-100: rgba(var(--gray-rgb), 0.05);
 
-  --button-primary-hover: #383838;
-  --button-secondary-hover: #f2f2f2;
-
-  display: grid;
-  grid-template-rows: 20px 1fr 20px;
-  align-items: center;
-  justify-items: center;
-  min-height: 100svh;
-  padding: 80px;
-  gap: 64px;
-  font-family: var(--font-geist-sans);
+.content{
+  margin-top: 10%;
+  margin-left: 12%;
+  color: #fff;
+  max-width: 600px;
+  font-size: 10px;
 }
 
-@media (prefers-color-scheme: dark) {
-  .page {
-    --gray-rgb: 255, 255, 255;
-    --gray-alpha-200: rgba(var(--gray-rgb), 0.145);
-    --gray-alpha-100: rgba(var(--gray-rgb), 0.06);
-
-    --button-primary-hover: #ccc;
-    --button-secondary-hover: #1a1a1a;
-  }
+.title{
+  text-align: left;
+  font-size: 24px;
 }
 
-.main {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  grid-row-start: 2;
-}
-
-.main ol {
-  font-family: var(--font-geist-mono);
-  padding-left: 0;
-  margin: 0;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: -0.01em;
-  list-style-position: inside;
-}
-
-.main li:not(:last-of-type) {
-  margin-bottom: 8px;
-}
-
-.main code {
-  font-family: inherit;
-  background: var(--gray-alpha-100);
-  padding: 2px 4px;
-  border-radius: 4px;
-  font-weight: 600;
-}
-
-.ctas {
-  display: flex;
-  gap: 16px;
-}
-
-.ctas a {
-  appearance: none;
-  border-radius: 128px;
-  height: 48px;
-  padding: 0 20px;
+.dropbtn {
+  background-color: rgba(113, 97, 128, 0.65);
+  margin-top: 15px;
+  height: 40px;
+  width: 600px;
+  opacity: 0.9;
+  color: white;
+  font-size: 17px;
   border: none;
-  border: 1px solid transparent;
-  transition: background 0.2s, color 0.2s, border-color 0.2s;
-  cursor: pointer;
+  text-align: center;
+  border-radius: 2px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown_content {
+  display: none;
+  position: absolute;
+  opacity: 1;
+  font-size: 17px;
+  text-align: center;
+  background: rgba(113, 97, 128, 0.885);
+  color: #fff;
+  min-width: 600px;
+  z-index: 1;
+  border-radius: 2px;
+}
+
+.dropdown_content a {
+  color: #fff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown_content a:hover {background-color: rgba(119, 108, 130, 0.65);}
+
+.dropdown:hover .dropdown_content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: rgba(113, 97, 128, 0.65);}
+
+.reviews h3{
+  color: #fff;
+  font-size: 20px;
+  margin-top: 5%;
+}
+
+.tiles{
   display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 500;
+  justify-content: flex-start;
 }
 
-a.primary {
-  background: var(--foreground);
-  color: var(--background);
-  gap: 8px;
+.tile{
+  margin-bottom: 40px;
+  margin: 25px;
+  margin-left: 0;
+  margin-right: 25px;
+  color: #fff;
+  line-height: 1.4;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  margin-top: 10px;
+  padding: 10px 7px 4px 7px;
+  height: 250px;
+  width: 150px;
+  transition: 0.5s;
 }
 
-a.secondary {
-  border-color: var(--gray-alpha-200);
-  min-width: 180px;
+.tile h3{
+  margin-bottom: 15px;
 }
 
-.footer {
-  grid-row-start: 3;
-  display: flex;
-  gap: 24px;
+.tile p{
+  margin-top: 5px;
+  font-size: 12px;
 }
 
-.footer a {
-  display: flex;
-  align-items: center;
-  gap: 8px;
+.tile p img{
+  width: 18px;
+  height: 18px;
+  margin-bottom: 10px;
 }
 
-.footer img {
-  flex-shrink: 0;
-}
-
-/* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
-  a.primary:hover {
-    background: var(--button-primary-hover);
-    border-color: transparent;
-  }
-
-  a.secondary:hover {
-    background: var(--button-secondary-hover);
-    border-color: transparent;
-  }
-
-  .footer a:hover {
-    text-decoration: underline;
-    text-underline-offset: 4px;
-  }
-}
-
-@media (max-width: 600px) {
-  .page {
-    padding: 32px;
-    padding-bottom: 80px;
-  }
-
-  .main {
-    align-items: center;
-  }
-
-  .main ol {
-    text-align: center;
-  }
-
-  .ctas {
-    flex-direction: column;
-  }
-
-  .ctas a {
-    font-size: 14px;
-    height: 40px;
-    padding: 0 16px;
-  }
-
-  a.secondary {
-    min-width: auto;
-  }
-
-  .footer {
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  .logo {
-    filter: invert();
-  }
+.tile:hover{
+  transform: translateY(-7px);
+  background-color: rgba(113, 97, 128, 0.65);
 }
