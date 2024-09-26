@@ -1,10 +1,17 @@
+"use client"
 import styles from "./page.module.css";
 import Image from "next/image";
 import starImage from "../assets/images/star.png";
 import profilePhoto from "../assets/images/photographer-four.png";
-
+import { useRouter } from "next/navigation";
 
 export default function ArtistOffers() {
+
+  const router = useRouter();
+  const navigateToShoppingCart = () => {
+    router.push('/shopping-cart');
+  }
+
   return (
       <div className={styles.content}>
         <main>
@@ -136,7 +143,7 @@ export default function ArtistOffers() {
             <button className={styles.btn_timeslot_time}>6:00 pm</button>
           </div>
           <div>
-            <button className={styles.btn_go_to_shopping_cart} onclick="window.open('shopping-cart', '_self');">Go to Shopping Cart</button>
+            <button className={styles.btn_go_to_shopping_cart} onClick={navigateToShoppingCart}>Go to Shopping Cart</button>
           </div>
         </main>
       </div>

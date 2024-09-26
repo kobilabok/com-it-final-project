@@ -1,6 +1,8 @@
+"use client"
 import styles from "./page.module.css";
 
 export default function Payment() {
+
   return (
     <div className={styles.content}>
         <main className={styles.main}>
@@ -26,7 +28,7 @@ export default function Payment() {
                     <p>all fields are required***</p>
                 </div>
                 <div>
-                    <button className={styles.btn_pay_total_amount} type="submit" onclick="solve()">Pay $489.96</button>
+                    <button className={styles.btn_pay_total_amount} type="submit" onclick="{displayText}">Pay $489.96</button>
                 </div>
               </form>
             </div>    
