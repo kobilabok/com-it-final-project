@@ -41,25 +41,17 @@
 }
 
 .btn_pay_for_order{
-    width: 130px;
-    padding: 14px 0px;
+    display: block;
+    width: auto;
+    margin: auto;
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     background: transparent;
     color: #fff;
     font-size: 20px;
     border: 1px solid #d29de8d3;
     border-radius: 5px;
-    cursor: pointer;
-    transition: 0.5s;
-}
-
-.btn_pay_for_order{
-    display: block;
-    width: 175px;
-    margin: auto;
-    font-size: 18px;
-    padding: 8px 16px;
-    margin-top: 20px;
-    margin-bottom: 20px;
     cursor: pointer;
     transition: 0.5s;
 }

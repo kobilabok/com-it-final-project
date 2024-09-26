@@ -63,8 +63,7 @@
 .btn_submit{
     display: flex;
     justify-content: center;
-    padding: 10px 20px;
-    width: 230px;
+    padding: 10px 30px;
     margin: auto;
     height: 45px;
     border: 0;
@@ -73,7 +72,7 @@
     border-radius: 5px;
     background: transparent;
     color: white;
-    width: 50%;
+    width: auto;
     cursor: pointer;
     margin-top: 10px;
     margin-bottom: 15px;

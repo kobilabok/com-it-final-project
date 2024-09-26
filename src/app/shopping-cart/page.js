@@ -1,6 +1,14 @@
+"use client"
 import styles from "./page.module.css";
+import { useRouter } from "next/navigation";
 
 export default function ShoppingCart() {
+
+  const router = useRouter();
+  const navigateToCheckout = () => {
+    router.push('/payment');
+  }
+
   return (
       <div className={styles.content}>
         <main>
@@ -79,7 +87,7 @@ export default function ShoppingCart() {
             </div>
           </div>
           <div>
-            <button className={styles.btn_pay_for_order} onclick="payment">Checkout</button>
+            <button className={styles.btn_pay_for_order} onClick={navigateToCheckout}>Checkout</button>
           </div>
         </main>
       </div>

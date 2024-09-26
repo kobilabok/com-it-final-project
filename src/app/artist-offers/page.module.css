@@ -182,26 +182,18 @@
 }
 
 .btn_go_to_shopping_cart{
-    width: 100px;
+    display: block;
+    width: auto;
+    margin: auto;
+    padding: 10px 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
     height: 50px;
-    padding: 14px 0px;
     background: transparent;
     color: #fff;
     font-size: 20px;
     border: 1px solid #d29de8d3;
     border-radius: 5px;
-    cursor: pointer;
-    transition: 0.5s;
-}
-
-.btn_go_to_shopping_cart{
-    display: block;
-    width: 180px;
-    margin: auto;
-    font-size: 16px;
-    padding: 8px 16px;
-    margin-top: 40px;
-    margin-bottom: 40px;
     cursor: pointer;
     transition: 0.5s;
 }
