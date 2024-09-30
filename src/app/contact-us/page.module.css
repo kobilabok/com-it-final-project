@@ -1,0 +1,84 @@
+
+/* --- Tile --- */
+.email_tile,
+.phone_tile{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 22px;
+    color: #fff;
+    margin: 0px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    padding: 10px 7px 4px 7px;
+    width: 400px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #775a967c;
+    margin-top: 20px;
+}
+
+.contact_us input {
+    width: 90%;
+    padding: 5px;
+    font-size: 1rem;
+    margin: 1rem;
+    background:white;
+    border: .5px solid black;
+    border-radius: 5px;
+}
+
+.contact_us textarea{
+    margin-left: 1rem;
+    width: 90%;
+    border: .5px solid black;
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+
+.phone_tile p{
+    margin: 1rem;
+}
+
+.email_tile h3{
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.contact_us p{
+    margin-left: 1rem;
+    margin-bottom: 0.3rem;
+}
+
+#message{
+    height: 8rem;
+}
+
+
+.btn_send_email{
+    display: block;
+    width: auto;
+    margin: auto;
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: transparent;
+    color: #fff;
+    font-size: 20px;
+    border: 1px solid #d29de8d3;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn_send_email a:hover{
+    text-decoration: none;
+}
+
+.btn_send_email:hover{
+    transform: translateY(-7px);
+    background:#d29de8d3;
+    color: #121414;
+}

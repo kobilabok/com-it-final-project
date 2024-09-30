@@ -43,6 +43,7 @@
     height: 230px;
     width: 200px;
     transition: 0.5s;
+    background-color: #775a967c;
 }
 
 .tile h2{

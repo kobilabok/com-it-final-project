@@ -1,5 +1,6 @@
 import styles from "./page.module.css";
 import Image from "next/image";
+import Link from "next/link";
 import imageOne from "../assets/images/photographer-one.png";
 import imageTwo from "../assets/images/photographer-two.png";
 import imageThree from "../assets/images/photographer-three.png";
@@ -15,7 +16,7 @@ export default function Photographers() {
           </div>
           <div className={styles.tile_clickable}>
             <div>
-              <a href="./artist-offers.html">
+              <Link href="artist-offers">
                 <div className={ styles.artist_tiles }>
                   <div>
                     <Image
@@ -28,10 +29,10 @@ export default function Photographers() {
                     portraits.<br />
                   </p>
                 </div>
-                </a>
+              </Link>
               </div>
               <div>
-                <a href="./artist-offers.html">
+                <Link href="artist-offers">
                   <div className={ styles.artist_tiles }>
                     <div>
                       <Image
@@ -44,10 +45,10 @@ export default function Photographers() {
                       to be treasured for generations.<br />
                     </p>
                   </div>
-                  </a>
+                </Link>
               </div>
               <div>
-                <a href="./artist-offers.html">
+                <Link href="artist-offers">
                   <div className={ styles.artist_tiles }>
                     <div>
                       <Image
@@ -60,10 +61,10 @@ export default function Photographers() {
                       that celebrates their place in your life.<br />
                     </p>
                   </div>
-                  </a>
+                </Link>
               </div>
               <div>
-                <a href="artist-offers">
+                <Link href="artist-offers">
                   <div className={ styles.artist_tiles }>
                     <div>
                       <Image
@@ -76,10 +77,10 @@ export default function Photographers() {
                       portraits.<br />
                     </p>
                   </div>
-                  </a>
+                  </Link>
               </div>
               <div>
-                <a href="./artist-offers.html">
+                <Link href="artist-offers">
                   <div className={ styles.artist_tiles }>
                     <div>
                       <Image
@@ -92,7 +93,7 @@ export default function Photographers() {
                       portraits.<br />
                     </p>
                   </div>
-                  </a>
+                </Link>
               </div>
           </div>
         </main>
