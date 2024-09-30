@@ -67,7 +67,13 @@
 }
 
 .btn_pay_total_amount:hover{
-    transform: translateY(-7px);
+    transform: translateY(-4px);
     background:#d29de8d3;
     color: #121414;
+}
+
+.btn_pay_total_amount:disabled{
+    background-color: grey;
+    cursor: not-allowed;
+    transform: translateY(0px); 
 }

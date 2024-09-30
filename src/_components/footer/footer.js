@@ -21,10 +21,10 @@ export default function Header() {
             <div className={styles.col}>
               <a href="#">Help Center</a>
               <a href="#">Legal Notice</a>
-              <a href="#">Privacy</a>
+              <a href="#">Careers</a>
             </div>
             <div className={styles.col}>
-              <a href="#">FAQ</a>
+              <a href="contact-us">Contact Us</a>
               <a href="#">Account</a>
               <a href="#">Careers</a>
             </div>

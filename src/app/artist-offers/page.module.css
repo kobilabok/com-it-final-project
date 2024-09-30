@@ -58,7 +58,7 @@
 
 .service_tiles:hover,
 .artist_tiles:hover{
-    transform: translateY(10px);
+    transform: translateY(4px);
     background-color: rgba(113, 97, 128, 0.65);
 }
 
@@ -199,7 +199,7 @@
 }
 
 .btn_go_to_shopping_cart:hover{
-    transform: translateY(-7px);
+    transform: translateY(-5px);
     background:#d29de8d3;
     color: #121414;
 }

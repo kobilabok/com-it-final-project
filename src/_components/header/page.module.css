@@ -72,3 +72,11 @@
     transform: translateY(-3px);
     color: #121414;
   }
+
+  #login_btn{
+    margin-right: 40px;
+  }
+
+  .cartQuantity{
+    border: 1px solid hotpink;
+  }
