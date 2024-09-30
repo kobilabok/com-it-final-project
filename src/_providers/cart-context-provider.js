@@ -1,38 +1,31 @@
-"use client"
-import { createContext, useState, useContext, useEffect} from "react";
+"use client";
+import { createContext, useState, useContext, useEffect } from "react";
 
 export const CartContext = createContext({});
 
-export default function CartContextProvider({ children }){
+export default function CartContextProvider({ children }) {
+  const [cart, setCart] = useState([]);
 
-    const [cart, setCart] = useState([]);
+  const addItemToCart = (item) => {
+    if (!cart.some((cartItem) => cartItem.id === item.id)) {
+      setCart([...cart, item]);
+    } else {
+      alert("Item you are trying to select is already in the cart.");
+    }
+  };
 
-    // const addItemToCart = (item) => {
-    //     setCart((prevCart) => {
-    //       const itemIndex = prevCart.findIndex((cartItem) => cartItem.id === item.id);
-    //       if (itemIndex > -1) {
-    //         const updatedCart = [...prevCart];
-    //         updatedCart[itemIndex].quantity += 1;
-    //         return updatedCart;
-    //       }
-    //       return [...prevCart, { ...item, quantity: 1 }];
-    //     });
-    //   };
+  const clearCart = () => {
+    setCart([]);
+  };
 
-      const addItemToCart = (product) => {
-        setCart([...cart, product]);
-      };
+  const removeItemFromCart = (id) => {
+    setCart(cart.filter((item) => item.id !== id));
+  };
 
-      const clearCart = () => {
-        setCart([]);
-      };
-
-      const removeItemFromCart = () => {
-        // setCart(cart.filter(item => item.id !== id));
-        setCart([]);
-      };
-
-      
-
-    return <CartContext.Provider value={[cart, addItemToCart, removeItemFromCart, clearCart]}>{children}</CartContext.Provider>
+  return (
+    <CartContext.Provider
+      value={[cart, addItemToCart, removeItemFromCart, clearCart]}>
+      {children}
+    </CartContext.Provider>
+  );
 }

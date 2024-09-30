@@ -1,4 +1,6 @@
+"use client"
 import styles from "./page.module.css";
+import Link from "next/link";
 
 export default function Registration() {
   return (
@@ -45,7 +47,7 @@ export default function Registration() {
             </button>
           </div>
         </form>
-        <p>Already registered?<a href="login"> Sign In </a></p>
+        <p>Already registered?<Link href="login"> Sign In </Link></p>
       </div>
     </div>
   );

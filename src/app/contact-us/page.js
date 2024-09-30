@@ -27,7 +27,7 @@ export default function ShoppingCart() {
               <div>
                 <form className={styles.contact_us} action="/url" method="GET">
                   <label for="name"></label>
-                  <input type="text" id={styles.name} name="name" placeholder="Enter your Name" required />
+                  <input type="text" id={styles.name} name="name" placeholder="Enter your name" required />
                   <label for="emailAddress"></label>
                   <input type="text" id={styles.emailAddress} name="emailAddress" placeholder="Enter your email address" required />
                   <label for="message"><p>Enter your message:</p></label>

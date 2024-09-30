@@ -1,4 +1,6 @@
+"use client"
 import styles from "./page.module.css";
+import Link from "next/link";
 
 export default function Login() {
   return (
@@ -29,8 +31,8 @@ export default function Login() {
             </button>
           </div>
         </form>
-        <p>Not registered?<a href="registration"
-            >Create an account</a></p>
+        <p>Not registered?<Link href="registration"
+            >Create an account</Link></p>
       </div>
     </div>
   );

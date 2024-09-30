@@ -39,6 +39,7 @@
     line-height: 1;
     text-align: center;
     transition: 0.5s;
+    background-color: #775a967c;
 }
 
 .artist_tiles p{

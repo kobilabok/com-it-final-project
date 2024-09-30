@@ -6,7 +6,7 @@ import { CartContext } from "@/_providers/cart-context-provider";
 
 export default function ShoppingCart() {
 
-  const [cart, removeItemFromCart, clearCart] = useContext(CartContext);
+  const [cart, addItemToCart, removeItemFromCart, clearCart] = useContext(CartContext);
 
   const router = useRouter();
   const navigateToCheckout = () => {
@@ -31,7 +31,7 @@ export default function ShoppingCart() {
                   { cart.length === 0 ? (
                     <tr>
                       <td colspan="3">
-                        <p>Your cart is empty! Start adding items!</p>
+                        <p>Your cart is empty! Please start adding items!</p>
                       </td>
                     </tr>) : (cart.map(item => 
                     <tr>
@@ -46,11 +46,7 @@ export default function ShoppingCart() {
                       <td>
                         <div className={styles.price}>
                           <strong>${item.price}</strong>
-                        </div>
-                      </td>
-                      <td>
-                        <div className={styles.bnt_remove}>
-                          <button onClick={() => removeItemFromCart()}>X</button>
+                          <span className={styles.bnt_remove}> <button onClick={() => removeItemFromCart(item.id)}>X</button></span>
                         </div>
                       </td>
                     </tr>
@@ -67,11 +63,7 @@ export default function ShoppingCart() {
                     <td>
                       <div className={styles.price}>
                         <strong>${cart.reduce((total, item) => total + item.price, 0).toFixed(2)}</strong>
-                      </div>
-                    </td>
-                    <td>
-                      <div className={styles.bnt_remove}>
-                        <button onClick={() => clearCart()}>Clear</button>
+                        <span className={styles.bnt_remove}> <button onClick={() => clearCart()}>Clear</button></span>
                       </div>
                     </td>
                   </tr>
@@ -81,7 +73,7 @@ export default function ShoppingCart() {
             </div>
           </div>
           <div>
-              <button className={styles.btn_pay_for_order} onClick={navigateToCheckout} disabled={cart.length === 0}>Checkout</button>
+            <button className={styles.btn_pay_for_order} onClick={ navigateToCheckout } disabled={cart.length === 0}>Checkout</button>
           </div>
         </main>
       </div>

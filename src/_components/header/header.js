@@ -15,10 +15,9 @@ export default function Header() {
                     <ul>
                         <li><Link href="/">Home</Link></li>
                         <li><Link href="about-us">About Us</Link></li>
-                        <li><Link href="shopping-cart">Cart {cart.length}
-                        </Link></li>
+                        <li><Link href="shopping-cart">Cart <span className={styles.cart_count}>{cart.length}</span></Link></li>
                     </ul>
-                    <button className={styles.btn_login}><a href="login">Login</a></button>
+                    <button className={styles.btn_login}><Link href="login">Login</Link></button>
                 </nav>
             </header>
     );

@@ -1,14 +1,11 @@
+"use client"
 import Image from "next/image";
+import Link from "next/link";
 import styles from "./page.module.css";
 import starImage from "./assets/images/star.png";
 
 export default function Home() {
-
-  function openWindow(select) {
-    var value = select.options[select.selectedIndex].value;
-    window.open(value, 'newwindow')
-  }
-
+  
   return (
       <div className={styles.content}>
         <main>
@@ -24,9 +21,9 @@ export default function Home() {
           <div className={styles.dropdown}>
             <button className={styles.dropbtn}>Please select an artist</button>
             <div className={styles.dropdown_content}>
-              <a href="portrait-artists">Portrait Painter</a>
-              <a href="painters">Painters</a>
-              <a href="photographers">Photographer</a>
+              <Link href="portrait-artists">Portrait Painter</Link>
+              <Link href="painters">Painters</Link>
+              <Link href="photographers">Photographer</Link>
             </div>
             </div>
           <div className={styles.reviews}>

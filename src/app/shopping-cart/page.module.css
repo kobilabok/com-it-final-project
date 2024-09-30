@@ -7,18 +7,16 @@
 
 .provided_services th,
 .selected_services th{
-    width: 300px;
     border-bottom: 2px solid #fff;
-
 } 
 
 .selected_services tr{
-    height: 50px;
-    font-size: 13px;
+    height: 3rem;
+    font-size: .8rem;
 }
 
 .selected_services td{
-    padding: 17px;
+    padding: 1rem 1.5rem;
 }
 
 .quantity{
@@ -29,7 +27,7 @@
     width: 60px;
     padding: 5px;
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 20rem;
     text-align: right;
     background:white;
     border: .5px solid black;
@@ -37,7 +35,7 @@
 }
 
 .price {
-    text-align: center;
+    text-align: right;
     font-size: 1rem;
 }
 
@@ -78,7 +76,7 @@
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     padding: 10px 7px 4px 7px;
-    width: 800px;
+    width: 40rem;
     height: auto;
     margin-left: auto;
     margin-right: auto;
@@ -98,7 +96,7 @@
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .btn_pay_for_order:disabled{
@@ -108,13 +106,12 @@
 }
 
 .bnt_remove button{
-    display: block;
     width: auto;
-    margin: auto;
+    margin-left: 2rem;
     padding: 0.25rem 0.5rem;
     background: transparent;
     color: #fff;
-    font-size: 20px;
+    font-size: 1rem;
     border: 1px solid #d29de8d3;
     border-radius: 5px;
     cursor: pointer;
