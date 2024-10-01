@@ -7,23 +7,25 @@ import profilePhoto from "../assets/images/photographer-two.png";
 import { useRouter } from "next/navigation";
 import { useContext, useState, useEffect} from "react";
 import { CartContext } from "@/_providers/cart-context-provider";
-import offer from "../photographers-data-local/page"
 
-import { db } from '../db/firestore'
+import db from '../db/firestore'
 import { getDocs, collection } from 'firebase/firestore'
 
 export default function ArtistOffers() {
 
   const [data, setData] = useState([]);
+  const [packagesData, setPackagesData] = useState([]);
   const [cart, addItemToCart, removeItemFromCart, getTotal, clearCart] = useContext(CartContext);
 
   useEffect(()=> {
     const fetchData = async () => {
-      const snapshot = await getDocs(collection(db, 'photographers'));
-      const documents = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
-
-      console.log("this is test", documents);
+      const snapshot = await getDocs((collection(db, 'photographers')));
+      const documents = snapshot.docs.map(doc => doc.data());
       setData(documents);
+
+      const snapshotPackages = await getDocs((collection(db, 'packages')));
+      const packages = snapshotPackages.docs.map(doc => doc.data()).sort((a, b) => a.id - b.id);
+      setPackagesData(packages);
     };
     
     fetchData()
@@ -31,7 +33,7 @@ export default function ArtistOffers() {
   }, []); // code runs only once
 
   const display = () => {
-    alert('Have a great day!');
+    alert('This page is awesome! Keep up a great work!');
   }
 
   const router = useRouter();
@@ -47,16 +49,18 @@ export default function ArtistOffers() {
             <Image src={profilePhoto} alt="mark photographer" />
           </div>
           <div className={styles.artist_description}>
-            <h3>{data.artistName}</h3>
-            <p>Years of experience: 4 YEARS</p>
+            {data.map(item => <div>
+              <h3>{item.artistName}</h3>
+              <p>Years of experience: {item.yearsOfExperience} YEARS</p>
+            </div>)}
             <div className={styles.stars}>
-              <Image src={starImage} />
-              <Image src={starImage} />
-              <Image src={starImage} />
-              <Image src={starImage} />
-              <Image src={starImage} />
+              <Image src={starImage} alt="reviews star"/>
+              <Image src={starImage} alt="reviews star"/>
+              <Image src={starImage} alt="reviews star"/>
+              <Image src={starImage} alt="reviews star"/>
+              <Image src={starImage} alt="reviews star"/>
             </div>
-            <p>{offer.artistDescription}<br /></p>
+            {data.map(item => <p>{item.artistDescription}<br /></p>)}
           </div>
         </div>
         <div className={styles.title}>
@@ -110,7 +114,7 @@ export default function ArtistOffers() {
           <h2>Available services for you to select</h2>
         </div>
         <div className={styles.tile_clickable}>
-          {offer.packages.map(pkg => 
+          {packagesData.map(pkg => 
             <div>
               <div className={styles.service_tiles}>
                 <p>{pkg.description}</p><br />
@@ -128,9 +132,7 @@ export default function ArtistOffers() {
         <div>
           <button
             className={styles.btn_go_to_shopping_cart}
-            onClick={ navigateToShoppingCart }
-          >
-            Go to Shopping Cart
+            onClick={ navigateToShoppingCart }>Go to Shopping Cart
           </button>
         </div>
       </main>
