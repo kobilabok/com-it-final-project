@@ -1,4 +1,5 @@
 "use client";
+
 import styles from "./page.module.css";
 import Image from "next/image";
 import starImage from "../assets/images/star.png";
@@ -7,34 +8,27 @@ import { useRouter } from "next/navigation";
 import { useContext, useState, useEffect} from "react";
 import { CartContext } from "@/_providers/cart-context-provider";
 import offer from "../photographers-data-local/page"
-import db from '../db/firestore'
-import { getDocs, collection } from 'firebase/firestore'
 
+import { db } from '../db/firestore'
+import { getDocs, collection } from 'firebase/firestore'
 
 export default function ArtistOffers() {
 
-  useEffect(()=> {
-    const getData = async () => {
-      const snapshot = await getDocs((collection(db, 'packages')));
-      const documents = snapshot.docs.map(doc => doc.data());
-      console.log("documents", documents);
-      setOffers(documents);
-    }
-    getData();
-  }, []); 
-  
-  const [offers, setOffers] = useState([]);
-  const [day, setDay] = useState(false);
-  const [time, setTime] = useState(false);
+  const [data, setData] = useState([]);
   const [cart, addItemToCart, removeItemFromCart, getTotal, clearCart] = useContext(CartContext);
 
-  function selectTime () {
-    setTime(true);
-  }
+  useEffect(()=> {
+    const fetchData = async () => {
+      const snapshot = await getDocs(collection(db, 'photographers'));
+      const documents = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
 
-  function selectDay (e) {
-    setTime(e.target.checked);
-  }
+      console.log("this is test", documents);
+      setData(documents);
+    };
+    
+    fetchData()
+      .catch(console.error);
+  }, []); // code runs only once
 
   const display = () => {
     alert('Have a great day!');
@@ -53,7 +47,7 @@ export default function ArtistOffers() {
             <Image src={profilePhoto} alt="mark photographer" />
           </div>
           <div className={styles.artist_description}>
-            <h3>Mark Wahlberg</h3>
+            <h3>{data.artistName}</h3>
             <p>Years of experience: 4 YEARS</p>
             <div className={styles.stars}>
               <Image src={starImage} />
