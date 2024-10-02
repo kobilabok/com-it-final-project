@@ -26,13 +26,12 @@
     list-style: none;
     width: 100%;
     text-align: right;
-    padding-right: 1rem;
     font-size: 1rem;
   }
   
   .nav ul li{
     display: inline-block;
-    margin: .6rem 1.2rem;
+    margin: .6rem .6rem;
   }
   
   .nav ul li a{
@@ -88,4 +87,9 @@
     color: #fff;
     background: #b14e83;
     border-radius: 30%;
+  }
+
+  .user_name p{
+    font-weight: bold;
+    color: #fff;
   }

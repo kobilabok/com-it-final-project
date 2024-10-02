@@ -104,3 +104,8 @@
   transform: translateY(-7px);
   background-color: rgba(113, 97, 128, 0.65);
 }
+
+.login_google{
+  display: flex;
+  align-items: center;
+}

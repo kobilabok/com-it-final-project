@@ -82,9 +82,9 @@ export default function Home() {
           </div>
         </div>
         {data ? (
-          <div>
+          <div className={styles.login_google}>
             <p>Welcome, {data.user.name} </p>{" "}
-            <Image src={data.user.image} width={100} height={100} alt="image" />
+            <Image src={data.user.image} width={20} height={20} alt="image" />
             <button onClick={() => signOut()}>Sign Out</button>
           </div>
         ) : (

@@ -57,7 +57,7 @@ export default function Payment() {
         </div>
         <div className={styles.purchase_text}>
           <p>
-            Thank you for your purchase! Once you paid, a confirmation email
+            Thank you for doing business with us! Once you paid, a confirmation email
             will be sent to you shortly after your payment has been processed.
             <br />
             <br />

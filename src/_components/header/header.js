@@ -32,6 +32,11 @@ export default function Header() {
               Cart <span className={styles.cart_count}>{cart.length}</span>
             </Link>
           </li>
+          <li>
+          {data ? (<div className={styles.user_name}>
+            <p>Welcome, {data.user.name} </p>
+            </div>) : ("")}
+          </li>
         </ul>
         {data ? (
           <div>
