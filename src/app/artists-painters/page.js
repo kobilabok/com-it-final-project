@@ -7,7 +7,7 @@ import painterThree from "../assets/images/painter-three.png";
 import painterFour from "../assets/images/painter-four.png";
 import painterSix from "../assets/images/painter-six.png";
 
-export default function PortraitArtists() {
+export default function PainterArtists() {
   return (
     <div className={styles.content}>
       <main>
@@ -16,7 +16,7 @@ export default function PortraitArtists() {
         </div>
         <div className={styles.tile_clickable}>
           <div>
-            <a href="./artist-offers.html">
+            <Link href="offers-painters">
               <div className={styles.artist_tiles}>
                 <div>
                   <Image src={painterOne} alt="portrait-painter-one" />
@@ -28,10 +28,10 @@ export default function PortraitArtists() {
                   <br />
                 </p>
               </div>
-            </a>
+            </Link>
           </div>
           <div>
-            <a href="./artist-offers.html">
+            <Link href="offers-painters">
               <div className={styles.artist_tiles}>
                 <div>
                   <Image src={painterThree} alt="portrait-painter-three" />
@@ -43,10 +43,10 @@ export default function PortraitArtists() {
                   <br />
                 </p>
               </div>
-            </a>
+            </Link>
           </div>
           <div>
-            <a href="./artist-offers.html">
+            <Link href="offers-painters">
               <div className={styles.artist_tiles}>
                 <div>
                   <Image src={painterTwo} alt="portrait-painter-two" />
@@ -58,10 +58,10 @@ export default function PortraitArtists() {
                   <br />
                 </p>
               </div>
-            </a>
+            </Link>
           </div>
           <div>
-            <a href="./artist-offers.html">
+            <Link href="offers-painters">
               <div className={styles.artist_tiles}>
                 <div>
                   <Image src={painterSix} alt="portrait-painter-six" />
@@ -73,10 +73,10 @@ export default function PortraitArtists() {
                   <br />
                 </p>
               </div>
-            </a>
+            </Link>
           </div>
           <div>
-            <a href="./artist-offers.html">
+            <Link href="offers-painters">
               <div className={styles.artist_tiles}>
                 <div>
                   <Image src={painterFour} alt="portrait-painter-four" />
@@ -88,7 +88,7 @@ export default function PortraitArtists() {
                   <br />
                 </p>
               </div>
-            </a>
+            </Link>
           </div>
         </div>
       </main>

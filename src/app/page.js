@@ -26,9 +26,9 @@ export default function Home() {
         <div className={styles.dropdown}>
           <button className={styles.dropbtn}>Please select an artist</button>
           <div className={styles.dropdown_content}>
-            <Link href="portrait-artists">Portrait Painter</Link>
-            <Link href="painters">Painters</Link>
-            <Link href="photographers">Photographer</Link>
+            <Link href="artists-portrait-painters">Portrait Painter</Link>
+            <Link href="artists-painters">Painters</Link>
+            <Link href="artists-photographers">Photographer</Link>
           </div>
         </div>
         <div className={styles.reviews}>
