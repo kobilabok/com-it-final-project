@@ -5,7 +5,7 @@ const products = async () => {
     const snapshot = await getDocs((collection(db, 'products')));
 
     const documents = snapshot.docs.map(doc => doc.data())
-
+    console.log(documents);
     return <div>{documents.map(doc => <div key={doc.id}>{doc.name} is {doc.unitPrice}</div>)}</div>;
 }
 
