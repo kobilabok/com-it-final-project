@@ -211,3 +211,13 @@
 .btn_timeslot_weekday input{
     margin: 0.8rem 0.3rem 1rem 0.8rem;
 }
+
+.title h2{
+    text-transform: uppercase;
+}
+
+.btn_go_to_shopping_cart:disabled{
+    background-color: grey;
+    cursor: not-allowed;
+    transform: translateY(0px); 
+}

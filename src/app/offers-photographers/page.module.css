@@ -233,3 +233,9 @@
     border-radius: .3rem;
     width: 15rem;
 }
+
+.btn_go_to_shopping_cart:disabled{
+    background-color: grey;
+    cursor: not-allowed;
+    transform: translateY(0px); 
+}

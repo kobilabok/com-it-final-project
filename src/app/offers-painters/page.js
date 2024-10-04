@@ -4,7 +4,7 @@ import styles from "./page.module.css";
 import Image from "next/image";
 import starImage from "../assets/images/star.png";
 import profilePhoto from "../assets/images/painter-one.png";
-import { useContext, useState, useEffect, useRef } from "react";
+import { useContext, useState, useEffect } from "react";
 import { CartContext } from "@/_providers/cart-context-provider";
 
 import db from "../db/firestore";
@@ -19,11 +19,11 @@ export default function PainterOffers() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const snapshot = await getDocs(collection(db, "photographers"));
+      const snapshot = await getDocs(collection(db, "artistsPainters"));
       const documents = snapshot.docs.map((doc) => doc.data());
       setData(documents);
 
-      const snapshotPackages = await getDocs(collection(db, "packages"));
+      const snapshotPackages = await getDocs(collection(db, "artistsPainters_packages"));
       const packages = snapshotPackages.docs
         .map((doc) => doc.data())
         .sort((a, b) => a.id - b.id);
@@ -103,7 +103,7 @@ export default function PainterOffers() {
       <main>
         <div className={styles.artist_description_tiles}>
           <div>
-            <Image src={profilePhoto} alt="mark photographer" />
+            <Image src={profilePhoto} alt="artist photo" priority={true}/>
           </div>
           <div className={styles.artist_description}>
             {data.map((item) => (
@@ -281,8 +281,6 @@ export default function PainterOffers() {
           <button
             className={styles.btn_go_to_shopping_cart}
             onClick={() => {
-              console.log(day, time, pkg);
-              console.log(selection);
               addItemToCart(selection);
               resetUserSelection();
             }}
