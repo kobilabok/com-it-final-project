@@ -6,7 +6,7 @@ import { useContext } from "react";
 import { CartContext } from "@/_providers/cart-context-provider";
 
 import { useSession } from "next-auth/react";
-import { signOut } from "next-auth/react";
+import { signOut, signIn } from "next-auth/react";
 
 export default function Header() {
   const [cart, setCart] = useContext(CartContext);
@@ -40,11 +40,11 @@ export default function Header() {
         </ul>
         {data ? (
           <div>
-            <button className={styles.btn_sign_out} onClick={() => signOut()}>Sign Out</button>
+            <button className={styles.btn_sign_out} onClick={signOut}>Sign Out</button>
           </div>
         ) : (
-          <div className={styles.btn_login}>
-            <Link href="/api/auth/signin">Login</Link>
+          <div>
+            <button className={styles.btn_login} onClick={signIn}>Login</button>
           </div>
         )}
       </nav>

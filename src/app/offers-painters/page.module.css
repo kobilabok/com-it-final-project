@@ -153,13 +153,13 @@
 
 .btn_timeslot_weekday,
 .btn_timeslot_time{
-    margin: 8px;
-    border-radius: 50px;
+    margin: .5rem;
+    border-radius: 3rem;
     background: #775a967c;
     border: #775a967c;;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.3);
     color: #fff;
-    font-size: 14px;
+    font-size: .9rem;
     cursor: pointer;
     transition: 0.3s;
 }
@@ -170,8 +170,8 @@
 }
 
 .btn_timeslot_time{
-    width: 100px;
-    height: 40px;
+    width: 7rem;
+    height: 2.5rem;
 }
 
 .btn_timeslot_weekday:hover,
@@ -210,4 +210,19 @@
 
 .btn_timeslot_weekday input{
     margin: 0.8rem 0.3rem 1rem 0.8rem;
+}
+
+.btn_go_to_shopping_cart:disabled{
+    background-color: grey;
+    cursor: not-allowed;
+    transform: translateY(0px); 
+}
+
+.title h2{
+    text-transform: uppercase;
+}
+
+.package_radio_btn{
+    font-size: .8rem;
+    text-transform: uppercase;
 }

@@ -19,7 +19,7 @@ export default function PainterArtists() {
             <Link href="offers-painters">
               <div className={styles.artist_tiles}>
                 <div>
-                  <Image src={painterOne} alt="portrait-painter-one" />
+                  <Image src={painterOne} alt="painter-one" />
                 </div>
                 <p>
                   My portrait painting service is dedicated to capturing the
@@ -34,7 +34,7 @@ export default function PainterArtists() {
             <Link href="offers-painters">
               <div className={styles.artist_tiles}>
                 <div>
-                  <Image src={painterThree} alt="portrait-painter-three" />
+                  <Image src={painterThree} alt="painter-three" />
                 </div>
                 <p>
                   Whether you're looking for a timeless family heirloom, a
@@ -49,7 +49,7 @@ export default function PainterArtists() {
             <Link href="offers-painters">
               <div className={styles.artist_tiles}>
                 <div>
-                  <Image src={painterTwo} alt="portrait-painter-two" />
+                  <Image src={painterTwo} alt="painter-two" />
                 </div>
                 <p>
                   Hello! I am Mark! I am very unique! My service extends to
@@ -64,7 +64,7 @@ export default function PainterArtists() {
             <Link href="offers-painters">
               <div className={styles.artist_tiles}>
                 <div>
-                  <Image src={painterSix} alt="portrait-painter-six" />
+                  <Image src={painterSix} alt="painter-six" />
                 </div>
                 <p>
                   My portrait painting service is dedicated to capturing the
@@ -79,7 +79,7 @@ export default function PainterArtists() {
             <Link href="offers-painters">
               <div className={styles.artist_tiles}>
                 <div>
-                  <Image src={painterFour} alt="portrait-painter-four" />
+                  <Image src={painterFour} alt="painter-four" />
                 </div>
                 <p>
                   My portrait painting service is dedicated to capturing the

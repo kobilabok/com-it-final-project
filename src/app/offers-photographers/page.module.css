@@ -1,3 +1,4 @@
+/* @import '~react-datetime/css/react-datetime.css'; */
 
 .artist_description_tiles{
     display: flex;
@@ -107,7 +108,10 @@
     font-size: 25px;
     padding: 50px 0;
     text-align: center;
+}
 
+.title h2{
+    text-transform: uppercase;
 }
 
 .service_tiles p{
@@ -210,4 +214,22 @@
 
 .btn_timeslot_weekday input{
     margin: 0.8rem 0.3rem 1rem 0.8rem;
+}
+
+.date_time_picker{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: none;
+
+    background: transparent;
+    color: #fff;
+    font-size: 1.3rem;
+    border: .1rem solid #d29de8d3;
+    border-radius: .3rem;
+    width: 15rem;
 }

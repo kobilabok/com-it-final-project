@@ -50,7 +50,7 @@ export default function Payment() {
                 onclick="{displayText}"
                 disabled={cart.length === 0}
               >
-                Pay ${cart.reduce((total, item) => total + item.price, 0)}
+                Pay ${cart.reduce((total, item) => total + item.package.price, 0)}
               </button>
             </div>
           </form>
