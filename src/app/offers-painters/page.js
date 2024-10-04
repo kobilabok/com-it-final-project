@@ -34,74 +34,69 @@ export default function PainterOffers() {
   }, []); // code runs only once
 
   // lets try this #1
-  const service = {
-    day: null,
-    time: null,
-    package: null,
-  };
+  // const selection = {
+  //   day: '',
+  //   time: '',
+  //   package: null,
+  // };
 
   // function handleDayPicker(e) {
-  //   console.log(service);
-  //   service.day = e;
-  //   console.log(service);
+  //   console.log(selection);
+  //   selection.day = e;
+  //   console.log(selection);
   // }
 
   // function handleTimePicker(e) {
-  //   service.time = e;
-  //   console.log(service);
+  //   selection.time = e;
+  //   console.log(selection);
   // }
 
   // function handlePackagePicker(e) {
-  //   service.package = e;
-  //   console.log(service);
+  //   selection.package = e;
+  //   console.log(selection);
   // }
 
   // lets try this #2
-  const [selection, setSelection] = useState({
-    day: '',
-    time: '',
-    package: null
-  });
+  // const [selection, setSelection] = useState({
+  //   day: '',
+  //   time: '',
+  //   package: null
+  // });
 
-  function handleDayPicker(e) {
-    setSelection({ ...selection, day: e }); //... spread operator 
-    console.log(e);
-    console.log(selection);
-  }
+  // function handleDayPicker(e) {
+  //   setSelection({ ...selection, day: e }); //... spread operator 
+  //   console.log(e);
+  //   console.log(selection);
+  // }
 
-  function handleTimePicker(e) {
-    setSelection({ ...selection, time: e });
-    console.log(selection);
-  }
+  // function handleTimePicker(e) {
+  //   setSelection({ ...selection, time: e });
+  //   console.log(selection);
+  // }
 
-  function handlePackagePicker(e) {
-    setSelection({ ...selection, package: e });
-    console.log(selection);
-  }
+  // function handlePackagePicker(e) {
+  //   setSelection({ ...selection, package: e });
+  //   console.log(selection);
+  // }
+
+  //lets try this #3
+  const [day, setDay] = useState('');
+  const [time, setTime] = useState('');
+  const [pkg, setPkg] = useState(null);
+
+  const selection = {
+    day: day,
+    time: time,
+    package: pkg,
+  };
+
+  const handleDayPicker = (e) => {setDay(e)};
+  const handleTimePicker = (e) => {setTime(e)};
+  const handlePackagePicker = (e) => {setPkg(e)};
 
   function resetUserSelection() {
     document.getElementById("offer-form").reset();
   }
-
-  // const input = document.getElementById("offer-form");
-  // input.addEventListener({
-
-  // });
-
-  // function resetUserSelection(name) {
-  //   const radio = document.querySelectorAll(input[type='radio'][name='"+name+"']);
-  //   radio.forEach(btn => {
-  //     if(btn.checked===true)
-  //       btn.checked = false;
-  //   });
-  // }
-
-  // const [selectedOption, setSelectedOption] = useState("");
-  // const formRef = useRef();
-
-  // const handleRadioChange = () => {
-  //   formRef.current.reset();
-  // };
 
   return (
     <div className={styles.content}>
@@ -133,7 +128,7 @@ export default function PainterOffers() {
           </div>
         </div>
         <div className={styles.title}>
-          <h2>Please select a day and the time</h2>
+          <h2>select a day and time</h2>
         </div>
         <form id="offer-form">
           <div className={styles.tile_clickable}>
@@ -142,7 +137,7 @@ export default function PainterOffers() {
                 type="radio"
                 id="radio-button"
                 name="day"
-                value={selection.day}
+                value=""
                 onChange={() => handleDayPicker("Tuesday")}
               />
               <label htmlFor="day">Tuesday</label>
@@ -152,7 +147,7 @@ export default function PainterOffers() {
                 type="radio"
                 id="day"
                 name="day"
-                value={selection.day}
+                value="{selection.day}"
                 onChange={() => handleDayPicker("Wednsday")}
               />
               <label htmlFor="day">Wednsday</label>
@@ -253,7 +248,7 @@ export default function PainterOffers() {
           </div>
         </form>
         <div className={styles.title}>
-          <h2>Please select a package</h2>
+          <h2>select a package</h2>
         </div>
         <div className={styles.tile_clickable}>
           {packagesData.map((pkg) => (
@@ -267,10 +262,9 @@ export default function PainterOffers() {
                     <li key={item}>{item}</li>
                   ))}
                 </ul>
-                {/* <form id="package-form"> */}
                 <div className={styles.package_radio_btn}>
                   {" "}
-                  <input
+                  <input  
                     type="radio"
                     id="radio-button"
                     name="package"
@@ -279,7 +273,6 @@ export default function PainterOffers() {
                   />
                   <label htmlFor="package"> Select</label>
                 </div>
-                {/* </form> */}
               </div>
             </div>
           ))}
@@ -288,11 +281,12 @@ export default function PainterOffers() {
           <button
             className={styles.btn_go_to_shopping_cart}
             onClick={() => {
-              console.log(service);
-              // addItemToCart(service);
-              // resetUserSelection();
+              console.log(day, time, pkg);
+              console.log(selection);
+              addItemToCart(selection);
+              resetUserSelection();
             }}
-            disabled={selection.day==='' || selection.time==='' || selection.package===null}
+            disabled={day==='' || time==='' || pkg===null}
           >
             Add to Cart
           </button>

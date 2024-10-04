@@ -81,7 +81,7 @@ export default function Home() {
             </p>
           </div>
         </div>
-        {data ? (
+        {/* {data ? (
           <div className={styles.login_google}>
             <p>Welcome, {data.user.name} </p>{" "}
             <Image src={data.user.image} width={20} height={20} alt="image" />
@@ -91,7 +91,7 @@ export default function Home() {
           <div>
             <Link href="/api/auth/signin">Login</Link>
           </div>
-        )}
+        )} */}
       </main>
     </div>
   );
