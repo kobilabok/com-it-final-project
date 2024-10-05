@@ -8,7 +8,7 @@ export default function CartContextProvider({ children }) {
   const [cart, setCart] = useState([]);
 
   const addItemToCart = (item) => {
-    if (!cart.some((cartItem) => cartItem.package.id === item.package.id)) {
+    if (!cart.some((cartItem) => cartItem.pkg.id === item.pkg.id)) {
       setCart([...cart, item]);
     } else {
       alert("Item you are trying to select is already in the cart.");
@@ -20,7 +20,7 @@ export default function CartContextProvider({ children }) {
   };
 
   const removeItemFromCart = (id) => {
-    setCart(cart.filter((item) => item.package.id !== id));
+    setCart(cart.filter((item) => item.pkg.id !== id));
   };
 
   return (

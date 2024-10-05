@@ -38,8 +38,8 @@ export default function ShoppingCart() {
                   cart.map((item) => (
                     <tr key={item}>
                       <td>
-                        {item.package.description} package with {item.package.artistName}
-                        <br />${item.package.price} on {item.day} at {item.time}
+                        {item.pkg.description} package with {item.pkg.artistName}
+                        <br />${item.pkg.price} on {item.day} at {item.time}
                       </td>
                       <td>
                         <div className={styles.quantity}>
@@ -54,10 +54,10 @@ export default function ShoppingCart() {
                       </td>
                       <td>
                         <div className={styles.price}>
-                          <strong>${item.package.price}</strong>
+                          <strong>${item.pkg.price}</strong>
                           <span className={styles.bnt_remove}>
                             {" "}
-                            <button onClick={() => removeItemFromCart(item.package.id)}>
+                            <button onClick={() => removeItemFromCart(item.pkg.id)}>
                               X
                             </button>
                           </span>
@@ -81,7 +81,7 @@ export default function ShoppingCart() {
                         <strong>
                           $
                           {cart
-                            .reduce((total, item) => total + item.package.price, 0)
+                            .reduce((total, item) => total + item.pkg.price, 0)
                             .toFixed(2)}
                         </strong>
                         <span className={styles.bnt_remove}>

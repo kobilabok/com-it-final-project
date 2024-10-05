@@ -29,6 +29,9 @@ export default function Home() {
             <Link href="artists-portrait-painters">Portrait Painter</Link>
             <Link href="artists-painters">Painters</Link>
             <Link href="artists-photographers">Photographer</Link>
+            <Link href="artists-portrait-painters">Accordions</Link>
+            <Link href="artists-painters">Ukuleles</Link>
+            <Link href="artists-photographers">Bagpipes and violins</Link>
           </div>
         </div>
         <div className={styles.reviews}>
