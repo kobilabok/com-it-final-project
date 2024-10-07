@@ -1,15 +1,19 @@
+.body{
+    margin-top: 5rem;
+}
 
 .artist_description_tiles{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    /* flex-wrap: wrap; */
     font-size: 22px;
     color: #fff;
     margin: 0px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     padding: 10px 7px 4px 7px;
-    width: 790px;
+    max-width: 790px;
     height: 282px;
     margin-left: auto;
     margin-right: auto;

@@ -1,0 +1,54 @@
+
+  
+.btn_login,
+.btn_sign_out{
+    padding: 0.3rem 0.8rem;
+    border: 0;
+    outline: 0;
+    height: 2rem;
+    border-radius: 0.4rem;
+    background: #f5168d;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    margin-right: 1.5rem;
+    font-size: 1.2rem;
+    transition: 0.5s;
+}
+
+  .btn_sign_out{
+    width: 5.6rem;
+    padding: 0.3rem;
+  }
+  
+  .btn_login a,
+  .btn_sign_out{
+    text-decoration: none;
+    color: white;
+  }
+  
+  .nav ul li a{
+    transform: translateY(-0.6rem);
+  }
+  
+  .btn_login a:hover,
+  .btn_login:hover,
+  .btn_sign_out:hover{
+    transform: translateY(-.2rem);
+    color: #121414;
+  }
+
+  .cart_count{
+    margin-left: 0.1rem;
+    padding: 0.3rem;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #fff;
+    background: #b14e83;
+    border-radius: 30%;
+  }
+
+  .user_name{
+    font-weight: bold;
+    color: #fff;
+  }

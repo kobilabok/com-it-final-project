@@ -34,26 +34,6 @@ export default function Artist({
     fetchData().catch(console.error);
   }, []); // code runs only once
 
-  // const [day, setDay] = useState("");
-  // const [time, setTime] = useState("");
-  // const [pkg, setPkg] = useState(null);
-
-  // const selection = {
-  //   day: day,
-  //   time: time,
-  //   package: pkg,
-  // };
-
-  // const handleDayPicker = (e) => {
-  //   setDay(e);
-  // };
-  // const handleTimePicker = (e) => {
-  //   setTime(e);
-  // };
-  // const handlePackagePicker = (e) => {
-  //   setPkg(e);
-  // };
-
   const [selection, setSelection] = useState({
     day: "",
     time: "",

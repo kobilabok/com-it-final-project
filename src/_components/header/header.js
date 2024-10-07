@@ -8,9 +8,25 @@ import { CartContext } from "@/_providers/cart-context-provider";
 import { useSession } from "next-auth/react";
 import { signOut, signIn } from "next-auth/react";
 
+// google sign in
+// import React, { useEffect, useState } from "react";
+// import { auth } from "@/firebase";
+// import { onAuthStateChanged } from "firebase/auth";
+// import GoogleSignIn from "../google-sign-in/google-sign-in";
+
 export default function Header() {
   const [cart, setCart] = useContext(CartContext);
   const { data } = useSession();
+
+  // const [user, setUser] = useState(null);
+
+  // useEffect(() => {
+  //   const unsubscribe = onAuthStateChanged(auth, (user) => {
+  //     setUser(user);
+  //   });
+
+  //   return () => unsubscribe();
+  // }, []);
 
   return (
     <header className={styles.header}>
@@ -37,6 +53,9 @@ export default function Header() {
             <p>Welcome, {data.user.name} </p>
             </div>) : ("")}
           </li>
+          {/* <li>
+            <GoogleSignIn user={user} setUser={setUser} />
+          </li> */}
         </ul>
         {data ? (
           <div>
