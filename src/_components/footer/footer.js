@@ -7,7 +7,7 @@ export default function Header() {
     return (
         <footer>
         <div className={styles.footer}>
-          <h2>Questions or Concerns? Call 1800-678-2233</h2>
+          <h3>Questions or Concerns? Call 1800-678-2233</h3>
   
           <div className={styles.row}>
             <div className={styles.col}>

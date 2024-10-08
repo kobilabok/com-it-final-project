@@ -69,7 +69,7 @@ export default function Artist({
           <div className={styles.artist_description}>
             {data.map((item) => (
               <div key={item}>
-                <h3>{item.artistName}</h3>
+                <h4>{item.artistName}</h4>
                 <p>Years of experience: {item.yearsOfExperience} YEARS</p>
               </div>
             ))}
@@ -89,7 +89,7 @@ export default function Artist({
           </div>
         </div>
         <div className={styles.title}>
-          <h2>select a day and time</h2>
+          <h3>select a day and time</h3>
         </div>
         <form id="offer-form">
           <div className={styles.tile_clickable}>
@@ -209,7 +209,7 @@ export default function Artist({
           </div>
 
           <div className={styles.title}>
-            <h2>select a package</h2>
+            <h3>select a package</h3>
           </div>
           <div className={styles.tile_clickable}>
             {packagesData.map((pkg) => (

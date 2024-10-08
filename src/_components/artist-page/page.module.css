@@ -1,5 +1,5 @@
 .body{
-    margin-top: 5rem;
+    margin-top: 8rem;
 }
 
 .artist_description_tiles{
@@ -18,7 +18,7 @@
     margin-left: auto;
     margin-right: auto;
     background-color: #775a967c;
-    margin-top: 20px;
+    margin-top: 5rem;
 }
 
 .artist_description{
@@ -50,9 +50,23 @@
     align-items: right;
 }
 
-.artist_description_tiles .artist-description h3{
-    margin: 20px 0px;
+.artist_description_tiles .artist-description h4{
+    margin-top: 1rem;
+    /* text-align: center; */
+    color: #FFFF;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
 }
+
+.title h3{
+    margin-top: 1rem;
+    text-align: center;
+    color: #FFFF;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
 
 .stars img{
     width: 24px;
