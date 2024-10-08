@@ -1,5 +1,6 @@
 import styles from "./page.module.css";
 import Image from "next/image";
+import Link from "next/link";
 import painterOne from "../assets/images/portrait-painter-one.png";
 import painterTwo from "../assets/images/portrait-painter-two.png";
 import painterThree from "../assets/images/portrait-painter-three.png";
@@ -17,7 +18,7 @@ export default function PortraitArtists() {
           </div>
           <div className={styles.tile_clickable}>
             <div>
-              <a href="./artist-offers.html">
+              <Link href="offers-portrait-painters">
                 <div className={ styles.artist_tiles }>
                   <div>
                     <Image
@@ -30,10 +31,10 @@ export default function PortraitArtists() {
                     portraits.<br />
                   </p>
                 </div>
-                </a>
+                </Link>
               </div>
               <div>
-                <a href="./artist-offers.html">
+                <Link href="offers-portrait-painters">
                   <div className={styles.artist_tiles}>
                     <div>
                       <Image
@@ -46,10 +47,10 @@ export default function PortraitArtists() {
                       to be treasured for generations.<br />
                     </p>
                   </div>
-                  </a>
+                  </Link>
               </div>
               <div>
-                <a href="./artist-offers.html">
+                <Link href="offers-portrait-painters">
                   <div className={styles.artist_tiles}>
                     <div>
                       <Image
@@ -62,10 +63,10 @@ export default function PortraitArtists() {
                       that celebrates their place in your life.<br />
                     </p>
                   </div>
-                  </a>
+                  </Link>
               </div>
               <div>
-                <a href="./artist-offers.html">
+                <Link href="offers-portrait-painters">
                   <div className={styles.artist_tiles}>
                     <div>
                       <Image
@@ -78,10 +79,10 @@ export default function PortraitArtists() {
                       portraits.<br />
                     </p>
                   </div>
-                  </a>
+                  </Link>
               </div>
               <div>
-                <a href="./artist-offers.html">
+                <Link href="offers-portrait-painters">
                   <div className={styles.artist_tiles}>
                     <div>
                       <Image
@@ -94,10 +95,10 @@ export default function PortraitArtists() {
                       portraits.<br />
                     </p>
                   </div>
-                  </a>
+                  </Link>
               </div>
               <div>
-                <a href="./artist-offers.html">
+                <Link href="offers-portrait-painters">
                   <div className={styles.artist_tiles}>
                     <div>
                       <Image
@@ -110,10 +111,10 @@ export default function PortraitArtists() {
                       that celebrates their place in your life.<br />
                     </p>
                   </div>
-                </a>
+                </Link>
               </div>
               <div>
-                <a href="./artist-offers.html">
+                <Link href="offers-portrait-painters">
                   <div className={styles.artist_tiles}>
                     <div>
                       <Image
@@ -126,7 +127,7 @@ export default function PortraitArtists() {
                       to be treasured for generations.<br />
                     </p>
                   </div>
-                </a>
+                </Link>
               </div>  
           </div>
         </main>

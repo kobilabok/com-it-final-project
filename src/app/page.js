@@ -26,9 +26,12 @@ export default function Home() {
         <div className={styles.dropdown}>
           <button className={styles.dropbtn}>Please select an artist</button>
           <div className={styles.dropdown_content}>
-            <Link href="portrait-artists">Portrait Painter</Link>
-            <Link href="painters">Painters</Link>
-            <Link href="photographers">Photographer</Link>
+            <Link href="artists-portrait-painters">Portrait Painter</Link>
+            <Link href="artists-painters">Painters</Link>
+            <Link href="artists-photographers">Photographer</Link>
+            <Link href="artists-portrait-painters">Accordions</Link>
+            <Link href="artists-painters">Ukuleles</Link>
+            <Link href="artists-photographers">Bagpipes and violins</Link>
           </div>
         </div>
         <div className={styles.reviews}>
@@ -81,7 +84,7 @@ export default function Home() {
             </p>
           </div>
         </div>
-        {data ? (
+        {/* {data ? (
           <div className={styles.login_google}>
             <p>Welcome, {data.user.name} </p>{" "}
             <Image src={data.user.image} width={20} height={20} alt="image" />
@@ -91,7 +94,7 @@ export default function Home() {
           <div>
             <Link href="/api/auth/signin">Login</Link>
           </div>
-        )}
+        )} */}
       </main>
     </div>
   );
