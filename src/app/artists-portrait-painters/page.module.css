@@ -36,7 +36,6 @@
     max-width: 12rem;
     height: 18rem;
     text-align: center;
-    color:#fff;
     line-height: 1;
     text-align: center;
     transition: 0.5s;
@@ -46,6 +45,7 @@
     font-size: 13px;
     line-height: 1.2;
     margin-bottom: 40px;
+    color:black;
 }
 
 .artist_tiles img{
@@ -58,5 +58,5 @@
 
 .artist_tiles:hover{
     transform: translateY(10px);
-    background-color: rgba(113, 97, 128, 0.65);
+    background-color: rgb(240, 238, 238);
 }

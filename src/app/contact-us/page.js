@@ -26,16 +26,16 @@ export default function ShoppingCart() {
               <h3>Email Us</h3>
               <div>
                 <form className={styles.contact_us} action="/url" method="GET">
-                  <label for="name"></label>
+                  <label htmlFor="name"></label>
                   <input type="text" id={styles.name} name="name" placeholder="Enter your name" required />
-                  <label for="emailAddress"></label>
+                  <label htmlFor="emailAddress"></label>
                   <input type="text" id={styles.emailAddress} name="emailAddress" placeholder="Enter your email address" required />
-                  <label for="message"><p>Enter your message:</p></label>
+                  <label htmlFor="message"><p>Enter your message:</p></label>
                   <textarea type="texbox" id={styles.message} name="message" placeholder="" required />
                 </form>
               </div>
               <div>
-                <button className={styles.btn_send_email} type="submit" onclick="{displayText}">Send</button>
+                <button className={styles.btn_send_email} type="submit">Send</button>
               </div>  
             </div>
           </div>

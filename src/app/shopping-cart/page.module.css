@@ -2,12 +2,12 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10px;
-    color: #fff;
+    color: black;
 } 
 
 .provided_services th,
 .selected_services th{
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid black;
 } 
 
 .selected_services tr{
@@ -47,9 +47,9 @@
     margin-top: 20px;
     margin-bottom: 20px;
     background: transparent;
-    color: #fff;
+    color:black;
     font-size: 20px;
-    border: 1px solid #d29de8d3;
+    border: 1px solid rgb(126, 125, 125);
     border-radius: 5px;
     cursor: pointer;
     transition: 0.5s;
@@ -61,14 +61,13 @@
 
 .btn_pay_for_order:hover{
     transform: translateY(-4px);
-    background:#d29de8d3;
+    background:rgb(240, 238, 238);
     color: #121414;
 }
 
 /* --- Tile --- */
 .shopping_cart_tile{
     display: flex;
-    align-items: center;
     justify-content: space-around;
     font-size: 22px;
     color: #fff;
@@ -77,10 +76,9 @@
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     padding: 10px 7px 4px 7px;
     max-width: 40rem;
-    height: auto;
+    min-height: 20rem;
     margin-left: auto;
     margin-right: auto;
-    background-color: #775a967c;
     margin-top: 20px;
 }
 
@@ -110,9 +108,9 @@
     margin-left: 2rem;
     padding: 0.25rem 0.5rem;
     background: transparent;
-    color: #fff;
+    color: black;
     font-size: 1rem;
-    border: 1px solid #d29de8d3;
+    border: 1px solid rgb(126, 125, 125);
     border-radius: 5px;
     cursor: pointer;
     transition: 0.5s;
@@ -120,6 +118,6 @@
 
 .bnt_remove button:hover{
     transform: translateY(-2px);
-    background:#d29de8d3;
+    background:rgb(240, 238, 238);
     color: #121414;
 }
