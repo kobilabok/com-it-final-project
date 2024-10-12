@@ -1,11 +1,14 @@
 "use client";
 import styles from "./page.module.css";
 import { useState } from "react";
+import db from '../db/firestore'
+import { addDoc, collection } from 'firebase/firestore'
 
 export default function ShoppingCart() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [success, setSuccess] = useState('');
   const [errors, setErrors] = useState("");
 
   const validateEmail = (email) => {
@@ -33,7 +36,7 @@ export default function ShoppingCart() {
     setErrors((prevErrors) => ({ ...prevErrors, [name]: "" }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const newErrors = {};
 
@@ -56,7 +59,15 @@ export default function ShoppingCart() {
       setErrors(newErrors);
     } else {
       
-      // Here you can handle form submission (e.g., sending data to a server)
+      // Handle form submission (e.g., sending data to Firebase)
+      try {
+        await addDoc(collection(db, 'contactUsSubmissions'), {email, name, message});
+        setSuccess('Email saved successfully!');
+        setEmail('');
+      }
+      catch(e){
+        setErrors('Error saving email: ' + e.message);
+      }
 
       setName("");
       setEmail("");
