@@ -11,12 +11,16 @@
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     padding: 10px 7px 4px 7px;
-    width: 400px;
+    width: 24rem;
     height: auto;
     margin-left: auto;
     margin-right: auto;
-    /* background-color: #775a967c; */
     margin-top: 20px;
+}
+
+.contact_us{
+    display: block;
+    width: 22rem;
 }
 
 .contact_us input {
@@ -35,6 +39,12 @@
     border: .5px solid black;
     border-radius: 5px;
     padding: 0.5rem;
+    resize: vertical;
+    font-size: 1rem;
+}
+
+.lbl{
+    margin-top: 1rem;
 }
 
 .phone_tile p{
@@ -82,4 +92,10 @@
     transform: translateY(-5px);
     background:rgb(240, 238, 238);
     color: #121414;
+}
+
+.error{
+    color: red;
+    font-size: 0.8rem;
+    margin-left: 1rem;
 }
