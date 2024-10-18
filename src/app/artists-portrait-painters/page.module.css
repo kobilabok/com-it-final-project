@@ -4,8 +4,8 @@
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    width: 800px;
-    margin-top: 12px;
+    max-width: 800px;
+    margin-top: 1rem;
     margin-left: auto;
     margin-right: auto;
     background-color: none;
@@ -27,15 +27,15 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    flex-grow: unset;
     margin: 6px;
     border-radius: 5px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     margin-top: 15px;
     padding: 2px 2px 2px 2px;
-    width: 200px;
-    height: 305px;
+    max-width: 12rem;
+    height: 18rem;
     text-align: center;
-    color:#fff;
     line-height: 1;
     text-align: center;
     transition: 0.5s;
@@ -45,11 +45,12 @@
     font-size: 13px;
     line-height: 1.2;
     margin-bottom: 40px;
+    color:black;
 }
 
 .artist_tiles img{
-    width: 190px;
-    height: 185px;
+    max-width: 11.5rem;
+    height: 170px;
     border-radius: 5px;
     margin-top: 2px;
     margin-bottom: 5px;
@@ -57,5 +58,5 @@
 
 .artist_tiles:hover{
     transform: translateY(10px);
-    background-color: rgba(113, 97, 128, 0.65);
+    background-color: rgb(240, 238, 238);
 }

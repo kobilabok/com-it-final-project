@@ -23,7 +23,7 @@ export default function About() {
     <div className={styles.content}>
       <main>
         {data.map((item) => (
-          <div>
+          <div key={item}>
             <h1 className={styles.title}>{item.about_us_title}</h1>
             <p>{item.about_us_text}</p>
             <h1 className={styles.title}>{item.our_values}</h1>

@@ -16,7 +16,7 @@ export default function Photographers() {
           </div>
           <div className={styles.tile_clickable}>
             <div>
-              <Link href="artist-offers">
+              <Link href="offers-photographers">
                 <div className={ styles.artist_tiles }>
                   <div>
                     <Image
@@ -32,7 +32,7 @@ export default function Photographers() {
               </Link>
               </div>
               <div>
-                <Link href="artist-offers">
+                <Link href="offers-photographers">
                   <div className={ styles.artist_tiles }>
                     <div>
                       <Image
@@ -48,7 +48,7 @@ export default function Photographers() {
                 </Link>
               </div>
               <div>
-                <Link href="artist-offers">
+                <Link href="offers-photographers">
                   <div className={ styles.artist_tiles }>
                     <div>
                       <Image
@@ -64,7 +64,7 @@ export default function Photographers() {
                 </Link>
               </div>
               <div>
-                <Link href="artist-offers">
+                <Link href="offers-photographers">
                   <div className={ styles.artist_tiles }>
                     <div>
                       <Image
@@ -80,7 +80,7 @@ export default function Photographers() {
                   </Link>
               </div>
               <div>
-                <Link href="artist-offers">
+                <Link href="offers-photographers">
                   <div className={ styles.artist_tiles }>
                     <div>
                       <Image

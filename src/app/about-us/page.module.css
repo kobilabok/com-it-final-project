@@ -1,8 +1,9 @@
 .content{
-    margin-top: 10%;
+    margin-top: 15%;
     margin-left: 12%;
-    color: #fff;
-    max-width: 800px;
+    /* color: #fff; */
+    color: black;
+    max-width: 900px;
     font-size: 10px;
 }
   
@@ -22,6 +23,7 @@
 .tile{
     margin-left: 0%;
     margin-top: 20px;
+    flex-wrap: wrap;
 }
 
 .reviews_title{
@@ -41,9 +43,8 @@
     margin-top: 10px;
     padding: 10px 7px 4px 7px;
     height: 230px;
-    width: 200px;
+    max-width: 160px;
     transition: 0.5s;
-    background-color: #775a967c;
 }
 
 .tile h2{
@@ -60,5 +61,5 @@
 
 .tile:hover{
     transform: translateY(-7px);
-    background-color: rgba(113, 97, 128, 0.65);
+    background-color: rgb(240, 238, 238);
 }

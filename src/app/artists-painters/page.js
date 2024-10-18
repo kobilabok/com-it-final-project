@@ -7,7 +7,7 @@ import painterThree from "../assets/images/painter-three.png";
 import painterFour from "../assets/images/painter-four.png";
 import painterSix from "../assets/images/painter-six.png";
 
-export default function PortraitArtists() {
+export default function PainterArtists() {
   return (
     <div className={styles.content}>
       <main>
@@ -16,10 +16,10 @@ export default function PortraitArtists() {
         </div>
         <div className={styles.tile_clickable}>
           <div>
-            <a href="./artist-offers.html">
+            <Link href="offers-painters">
               <div className={styles.artist_tiles}>
                 <div>
-                  <Image src={painterOne} alt="portrait-painter-one" />
+                  <Image src={painterOne} alt="painter-one" />
                 </div>
                 <p>
                   My portrait painting service is dedicated to capturing the
@@ -28,13 +28,13 @@ export default function PortraitArtists() {
                   <br />
                 </p>
               </div>
-            </a>
+            </Link>
           </div>
           <div>
-            <a href="./artist-offers.html">
+            <Link href="offers-painters">
               <div className={styles.artist_tiles}>
                 <div>
-                  <Image src={painterThree} alt="portrait-painter-three" />
+                  <Image src={painterThree} alt="painter-three" />
                 </div>
                 <p>
                   Whether you're looking for a timeless family heirloom, a
@@ -43,13 +43,13 @@ export default function PortraitArtists() {
                   <br />
                 </p>
               </div>
-            </a>
+            </Link>
           </div>
           <div>
-            <a href="./artist-offers.html">
+            <Link href="offers-painters">
               <div className={styles.artist_tiles}>
                 <div>
-                  <Image src={painterTwo} alt="portrait-painter-two" />
+                  <Image src={painterTwo} alt="painter-two" />
                 </div>
                 <p>
                   Hello! I am Mark! I am very unique! My service extends to
@@ -58,13 +58,13 @@ export default function PortraitArtists() {
                   <br />
                 </p>
               </div>
-            </a>
+            </Link>
           </div>
           <div>
-            <a href="./artist-offers.html">
+            <Link href="offers-painters">
               <div className={styles.artist_tiles}>
                 <div>
-                  <Image src={painterSix} alt="portrait-painter-six" />
+                  <Image src={painterSix} alt="painter-six" />
                 </div>
                 <p>
                   My portrait painting service is dedicated to capturing the
@@ -73,13 +73,13 @@ export default function PortraitArtists() {
                   <br />
                 </p>
               </div>
-            </a>
+            </Link>
           </div>
           <div>
-            <a href="./artist-offers.html">
+            <Link href="offers-painters">
               <div className={styles.artist_tiles}>
                 <div>
-                  <Image src={painterFour} alt="portrait-painter-four" />
+                  <Image src={painterFour} alt="painter-four" />
                 </div>
                 <p>
                   My portrait painting service is dedicated to capturing the
@@ -88,7 +88,7 @@ export default function PortraitArtists() {
                   <br />
                 </p>
               </div>
-            </a>
+            </Link>
           </div>
         </div>
       </main>

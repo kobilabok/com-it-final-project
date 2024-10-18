@@ -1,7 +1,7 @@
 "use client";
 import styles from "./page.module.css";
 import { useRouter } from "next/navigation";
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { CartContext } from "@/_providers/cart-context-provider";
 
 export default function ShoppingCart() {
@@ -15,14 +15,14 @@ export default function ShoppingCart() {
 
   return (
     <div className={styles.content}>
-      <main>
+      <main id="main">
         <div className={styles.title}>
           <h1>Shopping Cart</h1>
         </div>
         <div className={styles.shopping_cart_tile}>
           <div>
             <table className={styles.selected_services}>
-              <tbody className={styles.cart_table}>
+              <tbody className={styles.cart_table} id="tbody">
                 <tr>
                   <th>Selected Services</th>
                   <th>Qty</th>
@@ -30,16 +30,16 @@ export default function ShoppingCart() {
                 </tr>
                 {cart.length === 0 ? (
                   <tr>
-                    <td colspan="3">
+                    <td colSpan="3">
                       <p>Your cart is empty! Please start adding items!</p>
                     </td>
                   </tr>
                 ) : (
                   cart.map((item) => (
-                    <tr>
+                    <tr key={item}>
                       <td>
-                        {item.description} package with {item.artistName}
-                        <br />${item.price}
+                        {item.pkg.description} package with {item.pkg.artistName}
+                        <br />${item.pkg.price} on {item.day} at {item.time}
                       </td>
                       <td>
                         <div className={styles.quantity}>
@@ -54,10 +54,10 @@ export default function ShoppingCart() {
                       </td>
                       <td>
                         <div className={styles.price}>
-                          <strong>${item.price}</strong>
+                          <strong>${item.pkg.price}</strong>
                           <span className={styles.bnt_remove}>
                             {" "}
-                            <button onClick={() => removeItemFromCart(item.id)}>
+                            <button onClick={() => removeItemFromCart(item.pkg.id)}>
                               X
                             </button>
                           </span>
@@ -81,7 +81,7 @@ export default function ShoppingCart() {
                         <strong>
                           $
                           {cart
-                            .reduce((total, item) => total + item.price, 0)
+                            .reduce((total, item) => total + item.pkg.price, 0)
                             .toFixed(2)}
                         </strong>
                         <span className={styles.bnt_remove}>

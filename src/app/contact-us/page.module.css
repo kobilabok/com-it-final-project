@@ -6,17 +6,21 @@
     align-items: center;
     justify-content: space-around;
     font-size: 22px;
-    color: #fff;
+    color: #000;
     margin: 0px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     padding: 10px 7px 4px 7px;
-    width: 400px;
+    width: 24rem;
     height: auto;
     margin-left: auto;
     margin-right: auto;
-    background-color: #775a967c;
     margin-top: 20px;
+}
+
+.contact_us{
+    display: block;
+    width: 22rem;
 }
 
 .contact_us input {
@@ -35,6 +39,13 @@
     border: .5px solid black;
     border-radius: 5px;
     padding: 0.5rem;
+    resize: vertical;
+    font-size: 1rem;
+    min-height: 8rem;
+}
+
+.lbl{
+    margin-top: 1rem;
 }
 
 .phone_tile p{
@@ -65,12 +76,13 @@
     margin-top: 10px;
     margin-bottom: 10px;
     background: transparent;
-    color: #fff;
     font-size: 20px;
-    border: 1px solid #d29de8d3;
+    border: 1px solid rgb(126, 125, 125);
     border-radius: 5px;
     cursor: pointer;
     transition: 0.5s;
+    transform: translateY(-2px);
+    color: #121414;
 }
 
 .btn_send_email a:hover{
@@ -78,7 +90,13 @@
 }
 
 .btn_send_email:hover{
-    transform: translateY(-7px);
-    background:#d29de8d3;
+    transform: translateY(-5px);
+    background:rgb(240, 238, 238);
     color: #121414;
+}
+
+.error{
+    color: red;
+    font-size: 0.8rem;
+    margin-left: 1rem;
 }

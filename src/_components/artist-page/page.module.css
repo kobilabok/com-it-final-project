@@ -1,3 +1,6 @@
+.body{
+    margin-top: 8rem;
+}
 
 .artist_description_tiles{
     display: flex;
@@ -9,17 +12,17 @@
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     padding: 10px 7px 4px 7px;
-    width: 790px;
+    max-width: 790px;
     height: 282px;
     margin-left: auto;
     margin-right: auto;
-    background-color: #775a967c;
-    margin-top: 20px;
+    margin-top: 5rem;
 }
 
 .artist_description{
     margin-left: 10px;
     text-align: justify;
+    align-self: flex-start;
 }
 
 .artist_description_tiles img{
@@ -46,9 +49,25 @@
     align-items: right;
 }
 
-.artist_description_tiles .artist-description h3{
-    margin: 20px 0px;
+.artist-description h4{
+    margin-top: 1rem;
+    color: #000;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
 }
+
+.artist_description_tiles {
+    color: #000;
+}
+
+.title h3{
+    margin-top: 1rem;
+    text-align: center;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
 
 .stars img{
     width: 24px;
@@ -59,7 +78,7 @@
 .service_tiles:hover,
 .artist_tiles:hover{
     transform: translateY(4px);
-    background-color: rgba(113, 97, 128, 0.65);
+    background-color: rgb(240, 238, 238);
 }
 
 .tile_clickable{
@@ -78,7 +97,7 @@
 }
 
 .tile_clickable p{
-    color: #fff;
+    color: #000;
 }
 
 .tile_clickable img{
@@ -91,19 +110,17 @@
     flex-wrap: wrap;
     margin: 8px;
     border-radius: 10px;
-    background-color: #775a96c3;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     margin-top: 10px;
     padding: 5% 15% 5px;
     width: 186px;
     height: 290px;
-    color:#fff;
+    color:#000;
     line-height: 1;
     text-align: center;
 }
 
 .service_tiles h2{
-    color: #fff;
     font-size: 25px;
     padding: 50px 0;
     text-align: center;
@@ -139,7 +156,7 @@
     background: transparent;
     color: #fff;
     font-size: 12px;
-    border: 1px solid #d29de8d3;
+    border: 1px solid rgb(240, 238, 238);;
     border-radius: 5px;
     cursor: pointer;
     transition: 0.5s;
@@ -147,19 +164,17 @@
 
 .service_tiles button:hover{
     transform: translateY(-5px);
-    background:#d29de8d3;
+    background:rgb(240, 238, 238);
     color: #121414;
 }
 
 .btn_timeslot_weekday,
 .btn_timeslot_time{
-    margin: 8px;
-    border-radius: 50px;
-    background: #775a967c;
-    border: #775a967c;;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-    color: #fff;
-    font-size: 14px;
+    margin: .5rem;
+    border-radius: 3rem;
+    box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.3);
+    color: #000;
+    font-size: .9rem;
     cursor: pointer;
     transition: 0.3s;
 }
@@ -170,14 +185,14 @@
 }
 
 .btn_timeslot_time{
-    width: 100px;
-    height: 40px;
+    width: 7rem;
+    height: 2.5rem;
 }
 
 .btn_timeslot_weekday:hover,
 .btn_timeslot_time:hover{
     transform: translateY(-5px);
-    background:#d29de8d3;
+    background:rgb(240, 238, 238);
     color: #121414;
 }
 
@@ -190,9 +205,9 @@
     margin-bottom: 40px;
     height: 50px;
     background: transparent;
-    color: #fff;
+    color: #000;
     font-size: 20px;
-    border: 1px solid #d29de8d3;
+    border: 1px solid rgb(119, 117, 117);
     border-radius: 5px;
     cursor: pointer;
     transition: 0.5s;
@@ -200,7 +215,7 @@
 
 .btn_go_to_shopping_cart:hover{
     transform: translateY(-5px);
-    background:#d29de8d3;
+    background:rgb(240, 238, 238);
     color: #121414;
 }
 
@@ -210,4 +225,19 @@
 
 .btn_timeslot_weekday input{
     margin: 0.8rem 0.3rem 1rem 0.8rem;
+}
+
+.btn_go_to_shopping_cart:disabled{
+    background-color: rgb(240, 238, 238);
+    cursor: not-allowed;
+    transform: translateY(0px); 
+}
+
+.title h2{
+    text-transform: uppercase;
+}
+
+.package_radio_btn{
+    font-size: .8rem;
+    text-transform: uppercase;
 }

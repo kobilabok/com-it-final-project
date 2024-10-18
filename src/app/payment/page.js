@@ -18,7 +18,7 @@ export default function Payment() {
         </div>
         <div>
           <form className={styles.payment_form} action="/url" method="GET">
-            <label for="nameOnCard"></label>
+            <label htmlFor="nameOnCard"></label>
             <input
               type="text"
               id={styles.nameOnCard}
@@ -26,7 +26,7 @@ export default function Payment() {
               placeholder="Name on card"
               required
             />
-            <label for="cardNumber" required></label>
+            <label htmlFor="cardNumber" required></label>
             <input
               type="text"
               id={styles.cardNumber}
@@ -47,10 +47,9 @@ export default function Payment() {
               <button
                 className={styles.btn_pay_total_amount}
                 type="submit"
-                onclick="{displayText}"
                 disabled={cart.length === 0}
               >
-                Pay ${cart.reduce((total, item) => total + item.price, 0)}
+                Pay ${cart.reduce((total, item) => total + item.pkg.price, 0).toFixed(2)}
               </button>
             </div>
           </form>

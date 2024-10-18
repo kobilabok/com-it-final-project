@@ -1,15 +1,14 @@
 .main {
+    margin-top: 6rem;
     border-radius: 15px;
     color: #FFFF;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    margin-top: 20px;
     padding: 10px 20px;
     width: 400px;
     text-align: center;
     align-self:center;
     margin-left: auto;
     margin-right: auto;
-    background: #775a967c;
 }
 
 .main h1{
@@ -53,9 +52,9 @@
 .btn_pay_total_amount{
     display: block;
     background: transparent;
-    color: #fff;
+    color: #000;
     font-size: 20px;
-    border: 1px solid #d29de8d3;
+    border: 1px solid rgb(126, 125, 125);
     width: 230px;
     margin: auto;
     height: 45px;
@@ -68,7 +67,7 @@
 
 .btn_pay_total_amount:hover{
     transform: translateY(-4px);
-    background:#d29de8d3;
+    background:rgb(240, 238, 238);
     color: #121414;
 }
 
